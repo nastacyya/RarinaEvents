@@ -1,0 +1,41 @@
+// Main color palette
+$bg-primary: #FA5A76;
+$bg-secondary: #AFDED9;
+$bg-thirdly: #FFF8EC;
+
+// Breakpoints for responsive design
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+}
+
+// Header stilization
+header {
+    background-color: $bg-primary;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    img {
+        height: 50px;
+        width: auto;
+        margin-left: 40px;
+    }
+
+    nav {
+        margin-right: 30px;
+    }
+}
