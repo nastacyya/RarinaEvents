@@ -6,6 +6,7 @@ node_modules/
 dist/
 build/
 assets/css/style.css
+assets/css/style.css.map
 
 # Ignore VS Code config
 .vscode/

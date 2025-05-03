@@ -18,24 +18,48 @@ $breakpoint-xl: 1200px;
 }
 * {
     margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 // Header stilization
 header {
     background-color: $bg-primary;
-    height: 70px;
+    height: 90px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
+    
     img {
-        height: 50px;
+        height: 60px;
         width: auto;
         margin-left: 40px;
     }
+ 
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        color:white;
 
-    nav {
+        &:hover{
+            color: $bg-secondary;
+        }
+
+        &:visited, &:active {
+            text-decoration: none;
+        }
+    }
+    .navigation {
+        display: flex;
+        gap: 120px;
+    }
+    .languages {
         margin-right: 30px;
+        display: flex;
+        gap: 30px;
     }
 }
