@@ -1,8 +1,13 @@
-// 
 fetch('/assets/partials/header.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('header_div').innerHTML = data;
+});
+
+fetch('/assets/partials/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer_div').innerHTML = data;
 });
 
 // When page is loaded
@@ -10,12 +15,14 @@ window.addEventListener('DOMContentLoaded', async () => {
     const userPreferredLanguage = localStorage.getItem('language') || 'lv';
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);
+    let languageHTML = document.getElementById(`${userPreferredLanguage}`);
+    languageHTML.style.color = "#AFDED9";
 });
 
 // Onclick on language buttons
 function setLanguagePreference(lang) {
     localStorage.setItem('language', lang);
-    location.reload();
+    //location.reload();
 }
 
 async function setLanguage(lang) {
@@ -36,3 +43,4 @@ function updateContent(data) {
         element.innerHTML = data[key];
     });
 }
+
