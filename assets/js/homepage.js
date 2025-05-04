@@ -14,9 +14,7 @@ fetch('/assets/partials/footer.html')
 window.addEventListener('DOMContentLoaded', async () => {
     const userPreferredLanguage = localStorage.getItem('language') || 'lv';
     const langData = await fetchLanguageData(userPreferredLanguage);
-    updateContent(langData);
-    let languageHTML = document.getElementById(`${userPreferredLanguage}`);
-    languageHTML.style.color = "#AFDED9";
+    updateContent(langData, userPreferredLanguage);
 });
 
 // Onclick on language buttons
@@ -36,11 +34,19 @@ async function fetchLanguageData(lang) {
     return response.json();
 }
 
-function updateContent(data) {
+function updateContent(data, prefLang) {
     const elements = document.querySelectorAll('[data-i18n]');
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
         element.innerHTML = data[key];
     });
+    let languageHTML = document.getElementById(`${prefLang}`);
+    languageHTML.style.color = "#AFDED9";
 }
 
+const carousel = document.querySelector('.carousel_images');
+
+function scroll (){
+    carousel.scrollBy({left: -200,})
+}
+    
