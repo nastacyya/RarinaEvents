@@ -4,8 +4,10 @@
   "description": "",
   "main": "homepage.js",
   "scripts": {
-  "sass": "sass src/style.scss assets/css/style.css",
-  "watch:sass": "sass --watch src/style.scss:assets/css/style.css"
+    "sass": "sass src/style.scss assets/css/style.css",
+    "watch:sass": "sass --watch src/style.scss:assets/css/style.css",
+    "build": "npm run sass",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
