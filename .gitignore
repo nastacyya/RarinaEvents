@@ -17,4 +17,4 @@ Thumbs.db
 
 # Ignore environment variables (if you use them)
 .env
-assets/css/style.css.map
+
