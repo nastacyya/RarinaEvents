@@ -48,11 +48,11 @@ function updateModalBtn() {
     }
 }
 
-fetch('/api/gallery')
+fetch('/api/interior')
   .then(res => res.json())
   .then(images => {
     images.forEach(img => {
-      gallery.innerHTML += `<div class="image_wrapper"><img src="/assets/img/gallery/${img}" alt="${img}"><div>`;
+      gallery.innerHTML += `<div class="image_wrapper"><img loading="lazy" src="/assets/img/interior/${img}" alt="${img}"><div>`;
     });
 
     galleryImages = document.querySelectorAll(".image_wrapper img");

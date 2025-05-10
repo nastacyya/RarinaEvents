@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 
 const GALLERY_PATH = path.join(__dirname, 'assets/img/gallery');
+const INTERIOR_PATH = path.join(__dirname, 'assets/img/interior');
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
@@ -16,6 +17,16 @@ app.get('/api/gallery', (req, res) => {
     }
     const imageFiles = files.filter(file => /\.(jpg|jpeg|png|gif|webp)$/i.test(file));
     res.json(imageFiles);
+  });
+});
+
+app.get('/api/interior', (req, res) => {
+  fs.readdir(INTERIOR_PATH, (err, files) => {
+    if (err) {
+      return res.status(500).json({ error: 'Failed to read interior folder' });
+    }
+    const interiorImgFiles = files.filter(file => /\.(jpg|jpeg|png|gif|webp)$/i.test(file));
+    res.json(interiorImgFiles);
   });
 });
 
