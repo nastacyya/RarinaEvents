@@ -26,6 +26,7 @@ const prevBtn = document.getElementById('prev-btn');
 
 let currentIndex = 0;
 let galleryImages = [];
+let interiorImages = [];
 
 function updateModalBtn() {
     modalImg.src = galleryImages[currentIndex].src;
@@ -48,11 +49,11 @@ function updateModalBtn() {
     }
 }
 
-fetch('/api/interior')
+fetch('/api/gallery')
   .then(res => res.json())
   .then(images => {
     images.forEach(img => {
-      gallery.innerHTML += `<div class="image_wrapper"><img loading="lazy" src="/assets/img/interior/${img}" alt="${img}"><div>`;
+      gallery.innerHTML += `<div class="image_wrapper"><img src="/assets/img/gallery/${img}" alt="${img}"><div>`;
     });
 
     galleryImages = document.querySelectorAll(".image_wrapper img");
@@ -66,6 +67,25 @@ fetch('/api/interior')
 
   })
   .catch(err => console.error('Error fetching gallery images:', err));
+
+fetch('/api/interior')
+.then(res => res.json())
+.then(images => {
+    images.slice(0,12).forEach(img => {
+        gallery.innerHTML += `<div class="image_wrapper"><img loading="lazy" src="/assets/img/interior/${img}" alt="${img}"><div>`;
+    });
+
+    interiorImages = document.querySelectorAll(".image_wrapper img");
+    interiorImages.forEach((img, index) => {
+        img.addEventListener("click", () => {
+            currentIndex = index;
+            modal.style.display = "flex";
+            updateModalBtn();
+        });
+    });
+
+})
+.catch(err => console.error('Error fetching interior images:', err));
 
 nextBtn.addEventListener("click", () => {
     if (currentIndex < galleryImages.length - 1) {

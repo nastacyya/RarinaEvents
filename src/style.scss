@@ -415,7 +415,7 @@ footer {
 
     &_images {
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
         grid-gap: 10px;
 
         @include respond(md) { 
@@ -427,7 +427,6 @@ footer {
             position: relative;
             width: 150px;
             height: 100px;
-            //margin: 20px;
 
             &::after {
                 content: '';
@@ -492,9 +491,10 @@ footer {
         #modal-img {
             margin: auto;
             display: block;
-            width: 80%;
-            max-width: 800px;
+            width: auto;
             height: auto;
+            max-width: 800px;
+            max-height: 600px;
             animation-name: zoom;
             animation-duration: 0.6s;
         }
