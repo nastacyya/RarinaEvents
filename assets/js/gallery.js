@@ -19,20 +19,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 const gallery = document.querySelector('.gallery_images');
+const interior = document.querySelector('.interior_images');
 const modal = document.getElementById('myModal');
 const modalImg = document.getElementById("modal-img");
 const nextBtn = document.getElementById('next-btn');
 const prevBtn = document.getElementById('prev-btn');
 
 let currentIndex = 0;
+let currentSource = 'gallery';
 let galleryImages = [];
 let interiorImages = [];
 
 function updateModalBtn() {
-    modalImg.src = galleryImages[currentIndex].src;
+    const images = currentSource === 'gallery' ? galleryImages : interiorImages;
+    modalImg.src = images[currentIndex].src;
   
     // Disable next button if on last image
-    if (currentIndex >= galleryImages.length - 1) {
+    if (currentIndex >= images.length - 1) {
         nextBtn.style.opacity = "0";
         nextBtn.style.pointerEvents = "none";
     } else {
@@ -60,6 +63,7 @@ fetch('/api/gallery')
     galleryImages.forEach((img, index) => {
         img.addEventListener("click", () => {
           currentIndex = index;
+          currentSource = 'gallery';
           modal.style.display = "flex";
           updateModalBtn();
         });
@@ -72,13 +76,14 @@ fetch('/api/interior')
 .then(res => res.json())
 .then(images => {
     images.slice(0,12).forEach(img => {
-        gallery.innerHTML += `<div class="image_wrapper"><img loading="lazy" src="/assets/img/interior/${img}" alt="${img}"><div>`;
+        interior.innerHTML += `<div class="image_wrapper"><img src="/assets/img/interior/${img}" alt="${img}"><div>`;
     });
 
     interiorImages = document.querySelectorAll(".image_wrapper img");
     interiorImages.forEach((img, index) => {
         img.addEventListener("click", () => {
             currentIndex = index;
+            currentSource = 'interior';
             modal.style.display = "flex";
             updateModalBtn();
         });
@@ -88,14 +93,16 @@ fetch('/api/interior')
 .catch(err => console.error('Error fetching interior images:', err));
 
 nextBtn.addEventListener("click", () => {
-    if (currentIndex < galleryImages.length - 1) {
+    const images = currentSource === 'gallery' ? galleryImages : interiorImages;
+    if (currentIndex < images.length - 1) {
         currentIndex++;
         updateModalBtn();
     }
 });
 
 prevBtn.addEventListener("click", () => {
-    if (currentIndex <= galleryImages.length - 1) {
+    const images = currentSource === 'gallery' ? galleryImages : interiorImages;
+    if (currentIndex <= images.length - 1) {
         currentIndex--;
         updateModalBtn();
     }

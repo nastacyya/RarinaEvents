@@ -412,11 +412,15 @@ footer {
     @include flex-center();
     padding-top: 80px;
     flex-direction: column;
-
-    &_images {
+    
+    #ep {
+        padding-top: 30px;
+    }
+    .content {
         display: grid;
         grid-template-columns: auto auto auto auto;
-        grid-gap: 10px;
+        grid-gap: 40px;
+        padding: 40px 30px 80px 30px;
 
         @include respond(md) { 
             /* here will be screen resizing style */
@@ -425,8 +429,8 @@ footer {
         .image_wrapper {
             display: inline-block;
             position: relative;
-            width: 150px;
-            height: 100px;
+            width: 300px;
+            height: 300px;
 
             &::after {
                 content: '';
@@ -437,7 +441,7 @@ footer {
                 height: 100%;
                 background-color: $bg-secondary;
                 opacity: 0;
-                transition: opacity 0.3s;
+                transition: opacity 0.5s;
                 pointer-events: none;
             }
                     
@@ -455,7 +459,7 @@ footer {
             }
         }
     }      
-    /* The Modal (background) */
+   
     .modal {
         display: none; 
         flex-direction: row;
