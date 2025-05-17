@@ -3,8 +3,6 @@ $bg-primary: #FA5A76;
 $bg-secondary: #AFDED9;
 $bg-thirdly: #FFF8EC;
 
-// Breakpoints for responsive design
-
 
 // Mixins
 @mixin flex-center {
@@ -75,6 +73,7 @@ header {
         text-decoration: none;
         font-weight: 500;
         color:white;
+        letter-spacing: 1px;
 
         &:hover{
             color: $bg-secondary;
@@ -121,7 +120,7 @@ header {
             max-width: 500px;
             margin-bottom: 30px; 
             line-height: 2;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         button {
@@ -164,11 +163,10 @@ header {
     @include flex-center();
     flex-direction: column;
     width: 100%;
-    height: 600px;
+    height: 650px;
     background-image: url("/assets/img/bg_confetti.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     color: $bg-primary;
 
     h1 {
@@ -183,99 +181,21 @@ header {
             font-size: 16px;
             text-indent: 50px;
             text-align: justify;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             margin-bottom: 10px;
+            line-height: 2;
         }
     }   
 }
 
-footer {
-    @include flex-center();
-    background-color: $bg-primary;
-    width: 100%;
-    
-    .footer_div {
-        width: 100%;
-        @include flex-row();
-        color: white;
-        justify-content: space-between;
-        padding: 20px 70px 20px 50px;
-    }
-    
-    .logo_div {
-        @include flex-col();
-        text-align: left;
-        flex: 1;
 
-        img {
-            height:200px;
-            width: 200px;
-            margin-bottom: 20px;
-        }
-
-        p{
-            margin-left: 30px;
-        }
-    }
-
-    .contacts {
-        @include flex-col();
-        text-align: left;
-        flex: 1;
-        margin-left: 50px;
-
-        h1 {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-weight: 400;
-        }
-
-        p {
-            line-height: 2;
-        }
-    }
-
-    .socials {
-        @include flex-col();
-        text-align: right;
-        align-items: flex-end;
-        flex: 1;
-
-        p {
-            margin-top: 30px;
-            margin-bottom: 20px;
-            font-size: 20px;
-        }
-        
-        &_links {
-            @include flex-row();
-            gap: 20px;
-            
-            a {
-                text-decoration: none;
-                transition-duration: 0.4s;
-            }
-            .fa {
-                font-size: 40px; 
-                color: white;
-
-                &-facebook:hover{
-                    color: #3B5998;
-                }
-                &-instagram:hover{
-                    color: #C82D94;
-                }
-            }
-        }    
-    }
-}
 
 .carousel {
     @include flex-center();
     width: 100%;
-    height: 560px;
+    height: 500px;
     flex-direction: column;
-    background-color: $bg-thirdly;
+    background-color: $bg-secondary;
 
     &_images{
         width: 90%; 
@@ -285,7 +205,11 @@ footer {
         @include flex-row();
         gap: 20px;
         border-radius: 10px;
-
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar {
+                display: none;
+            }
         img {
             scroll-snap-align: center;
             border-radius: 10px;
@@ -296,7 +220,7 @@ footer {
 
     button {
         margin-top: 30px;
-        background-color: $bg-thirdly; /* Green */
+        background-color: $bg-secondary; /* Green */
         border: 3px solid $bg-primary;
         color: $bg-primary;
         padding: 12px 20px;
@@ -309,7 +233,7 @@ footer {
         &:hover {
             cursor: pointer;
             background-color: $bg-primary;
-            color: $bg-thirdly;
+            color: $bg-secondary;
         }
     } 
 }
@@ -320,6 +244,7 @@ footer {
     width: 100%;
     color: $bg-primary;
     height: 560px;
+    background-color: $bg-thirdly;
 
     &_image{
         margin-left: 90px;
@@ -334,8 +259,8 @@ footer {
         @include flex-center();
         margin-left: 80px;
         padding-right: 80px;
-        line-height: 2;
-        letter-spacing: 2px;
+        line-height: 2.2;
+        letter-spacing: 1px;
 
         ul {
             list-style-type: circle;
@@ -345,6 +270,96 @@ footer {
             }
         }
     }
+}
+
+.contact_form {
+    height: 700px;
+    width: 100%;
+    @include flex-center();
+    flex-direction: column;
+    background-image: url("/assets/img/bg_confetti_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1 {
+        font-size: 35px;
+        font-weight: 500;
+        color: $bg-primary;
+    }
+    p {
+        color: $bg-primary;
+        font-size: 14px;
+        padding: 20px 0 40px 0;
+    }
+
+    form {
+        width: 700px;
+        @include flex-center();
+        flex-direction: column;
+
+        input, textarea, button {
+            background-color: transparent;
+            outline: none;
+            font-size: 18px;
+            border-radius: 5px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+
+        input, textarea {
+            border: 3px solid $bg-secondary;
+            padding: 15px;
+            color: $bg-secondary;
+
+            &::placeholder {
+                color: #afded9aa;
+                opacity: 1; /* Firefox */
+              }
+              
+            &::-ms-input-placeholder { /* Edge 12 -18 */
+                color: #afded9aa;
+              }
+        }
+
+        button {
+            border: 3px solid $bg-primary;
+            color: $bg-primary;
+            font-weight: 500;
+            transition-duration: 0.4s;
+            padding: 10px;
+
+            &:hover {
+                background-color: $bg-primary;
+                color: white;
+                cursor: pointer;
+            }
+        }
+
+        .form_row {
+            @include flex-row();
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+
+            input {
+                width: 100%;
+            }
+            
+        }
+
+        .form_col {
+            @include flex-col();
+            width: 100%;
+            gap: 20px;
+
+            textarea {
+                height: 100px;
+            }
+            
+        }
+    }
+
 }
 
 .events {
@@ -392,7 +407,7 @@ footer {
             padding-top: 20px;
             margin-left: 20px;
             line-height: 2;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
 
             h1 {
                 font-weight: 400;
@@ -413,12 +428,12 @@ footer {
     padding-top: 80px;
     flex-direction: column;
     
-    #ep {
+    #photos_title {
         padding-top: 30px;
     }
     .content {
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: repeat(4, auto);
         grid-gap: 40px;
         padding: 40px 30px 80px 30px;
 
@@ -426,7 +441,7 @@ footer {
             /* here will be screen resizing style */
         }
         
-        .image_wrapper {
+        .image_wrapper {        // div for every image
             display: inline-block;
             position: relative;
             width: 300px;
@@ -527,4 +542,90 @@ footer {
         to {transform: scale(1)}
     }
     
+}
+
+iframe {
+    margin-bottom: -8px;
+}
+
+footer {
+    @include flex-center();
+    background-color: $bg-primary;
+    width: 100%;
+    letter-spacing: 1px;
+    
+    .footer_div {
+        width: 100%;
+        @include flex-row();
+        color: white;
+        justify-content: space-between;
+        padding: 20px 70px 20px 50px;
+    }
+    
+    .logo_div {
+        @include flex-col();
+        text-align: left;
+        flex: 1;
+
+        img {
+            height:200px;
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            margin-left: 30px;
+        }
+    }
+
+    .contacts {
+        @include flex-col();
+        text-align: left;
+        flex: 1;
+        margin-left: 50px;
+
+        h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        p {
+            line-height: 2;
+        }
+    }
+
+    .socials {
+        @include flex-col();
+        text-align: right;
+        align-items: flex-end;
+        flex: 1;
+
+        p {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        &_links {
+            @include flex-row();
+            gap: 20px;
+            
+            a {
+                text-decoration: none;
+                transition-duration: 0.4s;
+            }
+            .fa {
+                font-size: 40px; 
+                color: white;
+
+                &-facebook:hover{
+                    color: #3B5998;
+                }
+                &-instagram:hover{
+                    color: #C82D94;
+                }
+            }
+        }    
+    }
 }

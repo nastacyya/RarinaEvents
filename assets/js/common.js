@@ -35,4 +35,13 @@ export function updateContent(data) {
             element.innerHTML = data[key];
         }
     });
+    
+    // Update placeholder attributes
+    const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+    placeholders.forEach(element => {
+        const key = element.getAttribute('data-i18n-placeholder');
+        if (data[key]) {
+            element.placeholder = data[key];
+        }
+    });
 }

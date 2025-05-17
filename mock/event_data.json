@@ -3,15 +3,28 @@
         "title": "Harry potter",
         "dateTime": "25-05-2025 13:00",
         "price": 0,
-        "description": "Bērniem no 1-4 g.v.",
+        "language": "lv",
+        "age": "1-4 g.v.",
+        "description": "Interaktīva izrāde, animatori, dāvanas",
         "image": "four.jpeg"
     },
     {
         "title": "Čūskas noslēpums",
         "dateTime": "14-05-2025 15:00",
         "price": 15,
-        "description": "Bērniem no 5-8 g.v.",
+        "language": "ru",
+        "age": "5-8 g.v.",
+        "description": "Spēles, tēja, kafija",
         "image": "three.jpg"
+    },
+    {
+        "title": "Māmiņu rīti",
+        "dateTime": "14-05-2025 15:00",
+        "price": 10,
+        "language": "lv, ru",
+        "age": "0-5 g.v.",
+        "description": "Atpūta, saruna un prieks",
+        "image": "five.jpeg"
     }
 
 ]
