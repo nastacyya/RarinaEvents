@@ -148,6 +148,7 @@ header {
         justify-content: center;
         height: 100%;
         overflow: hidden;
+
         img {
             max-width: 100%;
             height: 100%;
@@ -187,8 +188,6 @@ header {
         }
     }   
 }
-
-
 
 .carousel {
     @include flex-center();
@@ -367,37 +366,43 @@ header {
     height: auto;
     @include flex-col();
     padding-top: 80px;
-    color: $bg-primary;
+    background-color: $bg-thirdly;
 
     #events_title {
-        padding-left: 70px;
-        margin-top: 50px;
+        margin: 50px 0 20px 70px;
         font-weight: 500;
         font-size: 40px;
+        color: $bg-primary;
     }
 
     &_list {
         @include flex-col();
         justify-content: center;
         padding: 20px 70px;
-
     }
 
     &_list_event {
-        border: 6px solid #b1b1b1;
         border-radius: 10px;
         @include flex-row();
         justify-content: flex-start;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        background-color: $bg-secondary;
+        color: #343434;
+        box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+        align-items: stretch;
+        min-height: 350px;
 
         .event_poster {
-            padding: 20px;
-            display: flex;
+            width: 400px; 
+            height: auto;
+            flex-shrink: 0;
 
             img {
-                height: 250px;
-                width: auto;
-                border-radius: 5px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
             }
         }
 
@@ -405,19 +410,32 @@ header {
             display: flex;
             flex-direction: column;
             padding-top: 20px;
-            margin-left: 20px;
-            line-height: 2;
+            margin-left: 30px;
+            line-height: 1.7;
             letter-spacing: 1px;
+            font-size: 18px;
 
             h1 {
-                font-weight: 400;
-            }
-            #price {
-                color:#b1b1b1;
                 font-weight: 600;
+                font-size: 36px;
+            }
+            #date_time {
+                font-weight: 500;
+                font-size: 22px;
+               
+            }
+            #price, #age {
+               // color:$bg-primary;
+                font-weight: 500;
             }
             #desc {
-                padding-top: 30px;
+                padding: 30px 10px 30px 0px;
+            }
+
+            .language {
+                position: relative;
+                top: 0;
+                right: 0;
             }
         }
     }

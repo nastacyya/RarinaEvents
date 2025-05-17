@@ -36,6 +36,7 @@ async function loadEvents() {
                     <div class="event_desc">
                         <h1>${event.title}</h1>
                         <p id="date_time">${event.dateTime}</p>
+                        <p id="age">${event.age}</p>
                         <p id="price">${event.price === 0 ? 'Bezmaksas' : event.price + '€'}</p>
                         <p id="desc">${event.description}</p>
                     </div>
