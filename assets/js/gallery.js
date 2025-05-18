@@ -56,7 +56,7 @@ fetch('/api/gallery')
   .then(res => res.json())
   .then(images => {
     images.forEach(img => {
-      gallery.innerHTML += `<div class="image_wrapper"><img src="/assets/img/gallery/${img}" alt="${img}"><div>`;
+      gallery.innerHTML += `<div class="image_wrapper"><img src="/assets/img/gallery/${img}" alt="${img}"></div>`;
     });
 
     galleryImages = document.querySelectorAll(".image_wrapper img");
@@ -68,29 +68,49 @@ fetch('/api/gallery')
           updateModalBtn();
         });
     });
-
   })
   .catch(err => console.error('Error fetching gallery images:', err));
 
 fetch('/api/interior')
-.then(res => res.json())
-.then(images => {
-    images.slice(0,12).forEach(img => {
-        interior.innerHTML += `<div class="image_wrapper"><img src="/assets/img/interior/${img}" alt="${img}"><div>`;
-    });
-
-    interiorImages = document.querySelectorAll(".image_wrapper img");
-    interiorImages.forEach((img, index) => {
-        img.addEventListener("click", () => {
-            currentIndex = index;
-            currentSource = 'interior';
-            modal.style.display = "flex";
-            updateModalBtn();
+    .then(res => res.json())
+    .then(images => {
+        images.slice(0,12).forEach(img => {
+            interior.innerHTML += `<div class="image_wrapper"><img data-src="/assets/img/interior/${img}" loading="lazy" alt="${img}"></div>`;
         });
-    });
 
-})
-.catch(err => console.error('Error fetching interior images:', err));
+        interiorImages = document.querySelectorAll(".image_wrapper img");
+        interiorImages.forEach((img, index) => {
+            img.addEventListener("click", () => {
+                currentIndex = index;
+                currentSource = 'interior';
+                modal.style.display = "flex";
+                updateModalBtn();
+            });
+        });
+
+        lazyLoadImages();
+    })
+    .catch(err => console.error('Error fetching interior images:', err));
+
+function lazyLoadImages() {
+    const lazyImages = document.querySelectorAll('img[data-src]');
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          observer.unobserve(img);
+        }
+      });
+    }, {
+      rootMargin: '100px', // preload slightly before visible
+      threshold: 0.1
+    });
+  
+    lazyImages.forEach(img => observer.observe(img));
+}
 
 nextBtn.addEventListener("click", () => {
     const images = currentSource === 'gallery' ? galleryImages : interiorImages;

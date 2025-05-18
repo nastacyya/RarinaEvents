@@ -26,8 +26,8 @@ const carousel = document.querySelector('.carousel_images');
 fetch('/api/gallery')
   .then(res => res.json())
   .then(images => {
-    images.slice(0, 8).forEach(img => {
-      carousel.innerHTML += `<img src="/assets/img/gallery/${img}" alt="${img}">`;
+    images.slice(0, 4).forEach(img => {
+      carousel.innerHTML += `<div class="image_container"><img src="/assets/img/gallery/${img}" alt="${img}"></div>`;
     });
   })
   .catch(err => console.error('Error fetching gallery images:', err));

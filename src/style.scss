@@ -38,6 +38,7 @@ $bg-thirdly: #FFF8EC;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -143,7 +144,7 @@ header {
     }
 
     &_photo{
-        flex: 1.3;
+        flex: 1.2;
         display: flex;
         justify-content: center;
         height: 100%;
@@ -198,27 +199,23 @@ header {
 
     &_images{
         width: 90%; 
-        overflow-x: scroll;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
         @include flex-row();
-        gap: 20px;
-        border-radius: 10px;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-        &::-webkit-scrollbar {
-                display: none;
-            }
-        img {
-            scroll-snap-align: center;
-            border-radius: 10px;
+        gap: 30px;
+
+        .image_container {
             height: 300px;
-            width: auto;
-        }
+            display: flex;
+
+            img {
+                border-radius: 10px;
+                width: 300px;
+                object-fit: cover;
+            }
+        } 
     }
 
     button {
-        margin-top: 30px;
+        margin-top: 40px;
         background-color: $bg-secondary; /* Green */
         border: 3px solid $bg-primary;
         color: $bg-primary;
@@ -445,25 +442,33 @@ header {
     @include flex-center();
     padding-top: 80px;
     flex-direction: column;
-    
-    #photos_title {
-        padding-top: 30px;
+    background-color: $bg-thirdly;
+
+    h1 {
+        color: $bg-primary;
+        font-weight: 500;
+        font-size: 40px;
+
+        &:first-child {
+            padding-top: 50px; 
+        }
     }
+
     .content {
         display: grid;
-        grid-template-columns: repeat(4, auto);
-        grid-gap: 40px;
-        padding: 40px 30px 80px 30px;
-
-        @include respond(md) { 
-            /* here will be screen resizing style */
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 50px 30px;
+        padding: 50px 30px 80px 30px;
+          
+        @include respond(lg) {
+            grid-template-columns: repeat(2, 1fr);
         }
         
         .image_wrapper {        // div for every image
             display: inline-block;
             position: relative;
-            width: 300px;
-            height: 300px;
+            width: 230px;
+            height: 230px;
 
             &::after {
                 content: '';
@@ -488,7 +493,8 @@ header {
                 height: 100%;
                 object-fit: cover;
                 cursor: pointer;
-                transition: 0.3s;            
+                transition: 0.3s;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);            
             }
         }
     }      
@@ -517,7 +523,7 @@ header {
             border: none;
             font-size: 40px;  
             color: white;
-            transition: opacity 0.3s ease;
+            transition: 0.3s;
 
             &:hover{
                 cursor: pointer;
@@ -542,7 +548,7 @@ header {
             top: 15px;
             right: 35px;
             color: #f1f1f1;
-            font-size: 40px;
+            font-size: 45px;
             font-weight: bold;
             transition: 0.3s;
 
@@ -560,10 +566,6 @@ header {
         to {transform: scale(1)}
     }
     
-}
-
-iframe {
-    margin-bottom: -8px;
 }
 
 footer {
