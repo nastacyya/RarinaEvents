@@ -1,7 +1,8 @@
 // Main color palette
 $bg-primary: #FA5A76;
-$bg-secondary: #AFDED9;
+$bg-secondary: #def9f5;
 $bg-thirdly: #FFF8EC;
+$dark-aqua: #a6dfda;
 
 
 // Mixins
@@ -75,9 +76,10 @@ header {
         font-weight: 500;
         color:white;
         letter-spacing: 1px;
+        transition: 0.4s;
 
         &:hover{
-            color: $bg-secondary;
+            color: $dark-aqua;
         }
 
         &:visited, &:active {
@@ -107,17 +109,17 @@ header {
         background-color: $bg-secondary;
         flex: 0.7;
         padding: 0px 70px;
-        color: #272727;
+        color: #3e3e3e;
         
         h1 {
             font-size: 45px;
-            font-weight: 200;
+            font-weight: 300;
             margin-bottom: 20px; 
             line-height: 1.5;
         }
 
         p {
-            font-size: 18px;
+            font-size: 20px;
             max-width: 500px;
             margin-bottom: 30px; 
             line-height: 2;
@@ -130,11 +132,11 @@ header {
             color: $bg-secondary;
             padding: 12px 20px;
             text-align: center;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 500;
             transition-duration: 0.4s;
             border-radius: 5px;
-            width: 190px;
+            width: 210px;
 
             &:hover {
                 cursor: pointer;
@@ -144,13 +146,14 @@ header {
     }
 
     &_photo{
-        flex: 1.2;
+        flex: 1;
         display: flex;
         justify-content: center;
         height: 100%;
-        overflow: hidden;
 
         img {
+            display: flex;
+            flex: 1;
             max-width: 100%;
             height: 100%;
             object-position: center;
@@ -165,27 +168,33 @@ header {
     @include flex-center();
     flex-direction: column;
     width: 100%;
-    height: 650px;
+    height: 690px;
     background-image: url("/assets/img/bg_confetti.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: $bg-primary;
 
     h1 {
-            font-size: 35px;
-            font-weight: 500;
-            margin-bottom: 40px;
+        font-size: 38px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        text-transform: uppercase;
     }
+
     .main_text{
         width: 700px;
 
         p {
-            font-size: 16px;
+            font-size: 20px;
             text-indent: 50px;
             text-align: justify;
             letter-spacing: 1px;
             margin-bottom: 10px;
-            line-height: 2;
+            line-height: 1.5;
+
+            &:first-child {
+                font-weight: 400;
+            }
         }
     }   
 }
@@ -221,7 +230,7 @@ header {
         color: $bg-primary;
         padding: 12px 20px;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 500;
         transition-duration: 0.4s;
         border-radius: 5px;
@@ -235,34 +244,42 @@ header {
 }
 
 .description {
-    @include flex-center();
-    flex-direction: row;
+    @include flex-row();
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     color: $bg-primary;
-    height: 560px;
+    height: 630px;
     background-color: $bg-thirdly;
 
     &_image{
-        margin-left: 90px;
-
+        margin-left: 30px;
         img {
-        height: 450px;
-        width: auto;
+            height: 600px;
+            width: auto;
         }
     }
     
     &_text {
         @include flex-center();
-        margin-left: 80px;
-        padding-right: 80px;
-        line-height: 2.2;
+        line-height: 1.7;
         letter-spacing: 1px;
+        font-size: 20px;
+        width: 700px;
 
         ul {
             list-style-type: circle;
 
+            p {
+                font-size: 30px;
+                padding-bottom: 20px;
+                font-weight: 500;
+                margin-left: -23px;
+                text-transform: uppercase;
+            }
+
             li{
-                padding-left: 10px;
+                padding-left: 20px;
             }
         }
     }
@@ -278,13 +295,14 @@ header {
     background-size: cover;
 
     h1 {
-        font-size: 35px;
+        font-size: 38px;
         font-weight: 500;
         color: $bg-primary;
+        text-transform: uppercase;
     }
     p {
         color: $bg-primary;
-        font-size: 14px;
+        font-size: 16px;
         padding: 20px 0 40px 0;
     }
 
@@ -303,17 +321,17 @@ header {
         }
 
         input, textarea {
-            border: 3px solid $bg-secondary;
+            border: 3px solid $dark-aqua;
             padding: 15px;
-            color: $bg-secondary;
+            color: $dark-aqua;
 
             &::placeholder {
-                color: #afded9aa;
-                opacity: 1; /* Firefox */
+                color: $dark-aqua;
+                opacity: 0.6;
               }
               
             &::-ms-input-placeholder { /* Edge 12 -18 */
-                color: #afded9aa;
+                color: $dark-aqua;
               }
         }
 
@@ -624,7 +642,7 @@ footer {
         p {
             margin-top: 30px;
             margin-bottom: 20px;
-            font-size: 20px;
+            font-size: 22px;
         }
         
         &_links {
