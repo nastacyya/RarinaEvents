@@ -1,33 +1,33 @@
 [
     {
-        "title": "Harry potter",
-        "dateTime": "25-05-2025 13:00",
-        "price": 0,
-        "reserve": "Iepriekšējā pieteikšanās",
-        "language": "lv",
-        "age": "1-4 g.v.",
-        "description": "Interaktīva izrāde, animatori, dāvanas",
-        "image": "four.jpeg"
-    },
-    {
-        "title": "Čūskas noslēpums",
-        "dateTime": "14-05-2025 15:00",
-        "price": 15,
-        "reserve": "",
-        "language": "ru",
-        "age": "5-8 g.v.",
-        "description": "Spēles, tēja, kafija",
-        "image": "three.jpg"
-    },
-    {
-        "title": "Māmiņu rīti",
-        "dateTime": "14-05-2025 15:00",
+        "image": "_DSC6083.jpg",
+        "title": "Māmiņu Rīti",
+        "dateTime": "Katru otrdienu, ceturtdienu, sestdienu | 10:00-12:00",
+        "age": "0-5 g.",
         "price": 10,
-        "reserve": "",
-        "language": "lv, ru",
-        "age": "0-5 g.v.",
-        "description": "Atpūta, saruna un prieks",
-        "image": "five.jpeg"
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Brīdis mieram, kafijai un gardām uzkodām, kamēr bērni izbauda spēles un prieku bērnu istabā! Liels bumbu baseins, rotaļlietas, gaisa hokejs, smilšu zīmēšana, attīstošie dēlīši un daudz citu aktivitāšu, kas aizraus mazos un ļaus mammas baudīt laiku sev!",
+        "language": "lv"
+    },
+    {
+        "image": "_DSC6752.jpg",
+        "title": "Skaistuma Diena Mazajām Princesēm",
+        "dateTime": "14.06.25 | 12:00-14:00",
+        "age": "",
+        "price": 25,
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Neaizmirstama diena mazajām dāmām ar rotaļīgu manikīru, spīguļiem, strazīšiem, košām frizūrām un krāsainām bizītēm! Pēc pārvērtībām notiks īsta modes skate, fotosesija, gardi kārumi, un jautra mūzika. Svētki, kuros katra meitene sajutīsies kā īsta princese!",
+        "language": "lv"
+    },
+    {
+        "image": "WhatsApp Image 2025-05-19 at 14.30.15.jpeg",
+        "title": "Meistarklase “Sāļais pušķis Līgo svētkiem”",
+        "dateTime": "19.06. un 20.06. | 18:00 - 20:00",
+        "age": "",
+        "price": 45,
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Profesionāla floriste un māksliniece iemācīs veidot oriģinālu sāļo pušķi no desiņām, siera un dārzeņiem, ko katra dalībniece ņems līdzi svētkiem — skaisti iepakotu un gatavu dāvināšanai vai svinēšanai. Tikmēr par bērniem rūpēsies sertificēta auklīte — jūs baudīsiet mieru un radošu procesu, zinot, ka bērni ir drošībā!",
+        "language": "lv"
     }
 
 ]

@@ -3,7 +3,7 @@ import { loadHeader, loadFooter, fetchLanguageData, updateContent } from './comm
 document.addEventListener('DOMContentLoaded', async () => {
     await loadHeader();
     await loadFooter();
-
+    
     const userPreferredLanguage = localStorage.getItem('language') || 'lv';
     const langData = await fetchLanguageData(userPreferredLanguage);
     updateContent(langData);

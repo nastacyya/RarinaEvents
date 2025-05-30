@@ -14,12 +14,21 @@ export async function loadHeader() {
             });
         }
     });
+
 }
 
 export async function loadFooter() {
     const response = await fetch('/assets/partials/footer.html');
     const data = await response.text();
     document.getElementById('footer_div').innerHTML = data;
+
+    const contactsHeader = document.getElementById("contacts");
+    const foooter = document.getElementById('footer_div');
+
+    contactsHeader.addEventListener("click", (e) => {
+        e.preventDefault();
+        foooter.scrollIntoView();
+    })
 }
 
 export async function fetchLanguageData(lang) {

@@ -30,7 +30,7 @@ $dark-aqua: #a6dfda;
     } @else if $breakpoint == lg {
         @media (max-width: 992px) { @content; }
     } @else if $breakpoint == xl {
-        @media (max-width: 1200px) { @content; }    
+        @media (max-width: 1300px) { @content; }    
     }
 }
 
@@ -78,6 +78,10 @@ header {
         letter-spacing: 1px;
         transition: 0.4s;
 
+        @include respond(xl) {
+            font-size: 14px;
+        }
+
         &:hover{
             color: $dark-aqua;
         }
@@ -88,7 +92,11 @@ header {
     }
     .navigation {
         display: flex;
-        gap: 120px;
+        gap: 70px;
+
+        @include respond(xl) {
+            gap: 50px;
+        }
     }
     .languages {
         margin-right: 30px;
@@ -103,6 +111,9 @@ header {
     height: 100%;
     background-color: $bg-secondary;
     padding-top: 80px;
+    @include respond(xl) {
+        height: 600px;  
+    } 
 
     &_block {
         @include flex-col();
@@ -116,6 +127,9 @@ header {
             font-weight: 300;
             margin-bottom: 20px; 
             line-height: 1.5;
+            @include respond(xl) {
+                font-size: 35px;  //-10px
+            }  
         }
 
         p {
@@ -124,6 +138,9 @@ header {
             margin-bottom: 30px; 
             line-height: 2;
             letter-spacing: 1px;
+            @include respond(xl) {
+                font-size: 16px;  //-4px
+            }
         }
 
         button {
@@ -137,6 +154,10 @@ header {
             transition-duration: 0.4s;
             border-radius: 5px;
             width: 210px;
+            @include respond(xl) {
+                font-size: 14px;  //-2px
+                width: 190px;   // -30px
+            }
 
             &:hover {
                 cursor: pointer;
@@ -168,21 +189,31 @@ header {
     @include flex-center();
     flex-direction: column;
     width: 100%;
-    height: 690px;
+    height: 700px;
     background-image: url("/assets/img/bg_confetti.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain; 
+    background-position: center center;
     color: $bg-primary;
+    @include respond(xl) {
+        height: 600px;  //100px
+    } 
 
     h1 {
         font-size: 38px;
         font-weight: 500;
         margin-bottom: 40px;
         text-transform: uppercase;
+        @include respond(xl) {
+            font-size: 32px; //-6px
+        } 
     }
 
     .main_text{
         width: 700px;
+        @include respond(xl) {
+            width: 600px;  //-100px
+        } 
 
         p {
             font-size: 20px;
@@ -192,8 +223,12 @@ header {
             margin-bottom: 10px;
             line-height: 1.5;
 
+            @include respond(xl) {
+                font-size: 16px;  //-4px
+            }
+
             &:first-child {
-                font-weight: 400;
+                font-weight: 500;
             }
         }
     }   
@@ -202,29 +237,39 @@ header {
 .carousel {
     @include flex-center();
     width: 100%;
-    height: 500px;
+    height: 550px;
     flex-direction: column;
     background-color: $bg-secondary;
+    @include respond(xl) {
+        height: 450px;  //-100px
+    }
 
     &_images{
-        width: 90%; 
+        width: 100%; 
         @include flex-row();
+        justify-content: center;
         gap: 30px;
 
         .image_container {
             height: 300px;
             display: flex;
+            @include respond(xl) {
+                height: 220px;
+            }
 
             img {
                 border-radius: 10px;
                 width: 300px;
                 object-fit: cover;
+                @include respond(xl) {
+                    width: 220px;
+                }
             }
         } 
     }
 
     button {
-        margin-top: 40px;
+        margin-top: 50px;
         background-color: $bg-secondary; /* Green */
         border: 3px solid $bg-primary;
         color: $bg-primary;
@@ -234,6 +279,9 @@ header {
         font-weight: 500;
         transition-duration: 0.4s;
         border-radius: 5px;
+        @include respond(xl) {
+            font-size: 14px;
+        }
             
         &:hover {
             cursor: pointer;
@@ -251,12 +299,18 @@ header {
     color: $bg-primary;
     height: 630px;
     background-color: $bg-thirdly;
+    @include respond(xl) {
+        height: 530px; //-100px
+    }
 
     &_image{
         margin-left: 30px;
         img {
             height: 600px;
             width: auto;
+            @include respond(xl) {
+                height: 500px;  //-100px
+            }
         }
     }
     
@@ -266,6 +320,10 @@ header {
         letter-spacing: 1px;
         font-size: 20px;
         width: 700px;
+        padding-right: 30px;
+        @include respond(xl) {
+            font-size: 16px; //-4px
+        }
 
         ul {
             list-style-type: circle;
@@ -276,6 +334,9 @@ header {
                 font-weight: 500;
                 margin-left: -23px;
                 text-transform: uppercase;
+                @include respond(xl) {
+                    font-size: 26px; //-4px
+                }
             }
 
             li{
@@ -292,24 +353,37 @@ header {
     flex-direction: column;
     background-image: url("/assets/img/bg_confetti_2.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain; 
+    background-position: center center;
+    @include respond(xl) {
+        height: 600px; //-100px
+    } 
 
     h1 {
         font-size: 38px;
         font-weight: 500;
         color: $bg-primary;
         text-transform: uppercase;
+        @include respond(xl) {
+            font-size: 32px; //-6px
+        } 
     }
     p {
         color: $bg-primary;
         font-size: 16px;
         padding: 20px 0 40px 0;
+        @include respond(xl) {
+            font-size: 14px;
+        } 
     }
 
     form {
         width: 700px;
         @include flex-center();
         flex-direction: column;
+        @include respond(xl) {
+            width: 600px; //-100px
+        } 
 
         input, textarea, button {
             background-color: transparent;
@@ -318,12 +392,18 @@ header {
             border-radius: 5px;
             line-height: 1.5;
             letter-spacing: 1px;
+            @include respond(xl) {
+                font-size: 16px;  //-2px
+            } 
         }
 
         input, textarea {
             border: 3px solid $dark-aqua;
             padding: 15px;
             color: $dark-aqua;
+            @include respond(xl) {
+               padding: 10px; //-5px
+            } 
 
             &::placeholder {
                 color: $dark-aqua;
@@ -333,20 +413,6 @@ header {
             &::-ms-input-placeholder { /* Edge 12 -18 */
                 color: $dark-aqua;
               }
-        }
-
-        button {
-            border: 3px solid $bg-primary;
-            color: $bg-primary;
-            font-weight: 500;
-            transition-duration: 0.4s;
-            padding: 10px;
-
-            &:hover {
-                background-color: $bg-primary;
-                color: white;
-                cursor: pointer;
-            }
         }
 
         .form_row {
@@ -370,7 +436,23 @@ header {
             textarea {
                 height: 100px;
             }
-            
+        }
+
+        button {
+            border: 3px solid $bg-primary;
+            color: $bg-primary;
+            font-weight: 500;
+            transition-duration: 0.4s;
+            padding: 10px;
+            @include respond(xl) {
+                padding: 8px; //-2px
+            }
+
+            &:hover {
+                background-color: $bg-primary;
+                color: white;
+                cursor: pointer;
+            }
         }
     }
 
@@ -405,11 +487,10 @@ header {
         color: #343434;
         box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.19);
         align-items: stretch;
-        min-height: 350px;
+        height: 400px;
 
         .event_poster {
             width: 400px; 
-            height: auto;
             flex-shrink: 0;
 
             img {
@@ -424,8 +505,7 @@ header {
         .event_desc {
             display: flex;
             flex-direction: column;
-            padding-top: 20px;
-            margin-left: 30px;
+            padding: 20px 30px;
             line-height: 1.7;
             letter-spacing: 1px;
             font-size: 18px;
@@ -440,11 +520,10 @@ header {
                
             }
             #price, #age {
-               // color:$bg-primary;
                 font-weight: 500;
             }
             #desc {
-                padding: 30px 10px 30px 0px;
+                padding-top: 30px;
             }
 
             .language {
@@ -466,20 +545,27 @@ header {
         color: $bg-primary;
         font-weight: 500;
         font-size: 40px;
+        @include respond(xl) {
+            font-size: 35px;
+        }
 
         &:first-child {
             padding-top: 50px; 
+            @include respond(xl) {
+                padding-top: 30px; 
+            }
         }
     }
 
     .content {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-gap: 50px 30px;
-        padding: 50px 30px 80px 30px;
+        grid-gap: 40px 20px;
+        padding: 50px 0px 80px;
           
-        @include respond(lg) {
-            grid-template-columns: repeat(2, 1fr);
+        @include respond(xl) {
+            grid-template-columns: repeat(4, 1fr);
+            padding: 50px 0px;
         }
         
         .image_wrapper {        // div for every image
@@ -487,6 +573,11 @@ header {
             position: relative;
             width: 230px;
             height: 230px;
+
+            @include respond(xl) {
+                width: 210px;
+                height: 210px;
+            }
 
             &::after {
                 content: '';
@@ -591,6 +682,12 @@ footer {
     background-color: $bg-primary;
     width: 100%;
     letter-spacing: 1px;
+    p {
+        font-size: 18px;
+        @include respond(xl) {
+            font-size: 16px;  //-2px
+        }
+    }
     
     .footer_div {
         width: 100%;
@@ -611,7 +708,7 @@ footer {
             margin-bottom: 20px;
         }
 
-        p{
+        p {
             margin-left: 30px;
         }
     }
@@ -639,10 +736,13 @@ footer {
         align-items: flex-end;
         flex: 1;
 
-        p {
-            margin-top: 30px;
+        h2 {
+            margin-top: 25px;
             margin-bottom: 20px;
-            font-size: 22px;
+            font-size: 28px;
+            @include respond(xl) {
+                font-size: 26px; //-2px
+            }
         }
         
         &_links {
@@ -666,4 +766,10 @@ footer {
             }
         }    
     }
+}
+
+iframe {
+    @include respond(xl) {
+        height: 350px; //-100px
+    } 
 }

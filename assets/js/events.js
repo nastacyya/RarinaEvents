@@ -31,7 +31,7 @@ async function loadEvents() {
             container.innerHTML += `
                 <div class="events_list_event">
                     <div class="event_poster">
-                        <img src="assets/img/gallery/${event.image}" alt="${event.title}">
+                        <img src="assets/img/events/${event.image}" alt="${event.title}">
                     </div>
                     <div class="event_desc">
                         <h1>${event.title}</h1>
