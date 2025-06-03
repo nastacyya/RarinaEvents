@@ -83,11 +83,11 @@ app.get('/', (req, res) => {
 });
 
 app.get('/events', (req, res) => {
-    res.sendFile(path.join(__dirname, 'events.html'));
+    res.sendFile(path.join(__dirname, '/pages/events.html'));
 });
 
 app.get('/gallery', (req, res) => {
-  res.sendFile(path.join(__dirname, 'gallery.html'));
+  res.sendFile(path.join(__dirname, '/pages/gallery.html'));
 });
 
 app.get('*', (req, res) => {

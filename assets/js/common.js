@@ -15,6 +15,55 @@ export async function loadHeader() {
         }
     });
 
+    const menuIcon = document.querySelector(".menu");
+    const header = document.getElementById("header");
+    const nav = document.querySelector(".navigation");
+    const lang = document.querySelector(".languages");
+    let sidebarWrapper = null;
+
+    menuIcon.addEventListener("click", () => {
+        menuIcon.classList.toggle("change");
+        sidebarWrapper = document.querySelector(".sidebar");
+
+        if (!sidebarWrapper) {
+            sidebarWrapper = document.createElement("div");
+            sidebarWrapper.classList.add("sidebar");
+
+            nav.parentNode.insertBefore(sidebarWrapper, nav);
+            // Move elements inside sidebar
+            sidebarWrapper.appendChild(nav);
+            sidebarWrapper.appendChild(lang);
+
+            requestAnimationFrame(() => {
+                sidebarWrapper.classList.add("active");
+            });
+
+            document.body.style.overflow = "hidden";
+
+        } else {
+            sidebarWrapper.classList.remove("active");
+
+            setTimeout(() => {
+                header.appendChild(nav);
+                header.appendChild(lang);
+                sidebarWrapper.remove();
+                document.body.style.overflow = "";
+            }, 300); 
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        const sidebar = document.querySelector(".sidebar");
+        if (window.innerWidth >= 992) {
+             if (sidebar) {
+                header.appendChild(nav);
+                header.appendChild(lang);
+                sidebar.remove();
+                document.body.style.overflow = "";
+                menuIcon.classList.remove("change");
+            }
+        }
+    });
 }
 
 export async function loadFooter() {
