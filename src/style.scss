@@ -130,14 +130,13 @@ header {
         .sidebar {
             position: fixed;
             top: 0;
-            right: -100%; // hidden off-screen
+            right: -100%; //hidden before animation
             width: 50%;
             height: 100%;
-            background-color: $bg-primary; // adjust to your design
-            box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.19);
+            background-color: $bg-primary; 
+            box-shadow: -5px 0px 10px 1px rgba(0, 0, 0, 0.19);
             padding: 35px;
-            display: flex;
-            flex-direction: column;
+            @include flex-col();
             align-items: center;
             justify-content: flex-start;
             gap: 50px;
@@ -162,7 +161,7 @@ header {
         }
 
         .sidebar.active {
-            right: 0; // slide into view
+            right: 0; 
         }
     }
 }
@@ -192,6 +191,9 @@ header {
             @include respond(xl) {
                 font-size: 35px;  //-10px
             }  
+            @include respond(lg) {
+                font-size: 32px;  //-3px
+            } 
         }
 
         p {
@@ -203,6 +205,9 @@ header {
             @include respond(xl) {
                 font-size: 16px;  //-4px
             }
+            @include respond(lg) {
+                font-size: 15px;  //-1px
+            } 
         }
 
         button {
@@ -220,6 +225,10 @@ header {
                 font-size: 14px;  //-2px
                 width: 190px;   // -30px
             }
+            @include respond(lg) {
+                font-size: 13px;  //-1px
+                width: 180px;   // -10px
+            }
 
             &:hover {
                 cursor: pointer;
@@ -229,8 +238,8 @@ header {
     }
 
     &_photo{
-        flex: 1;
         display: flex;
+        flex: 1;
         justify-content: center;
         height: 100%;
 
@@ -246,7 +255,6 @@ header {
 
 }
 
-// Description part
 .about_us {
     @include flex-center();
     flex-direction: column;
@@ -269,12 +277,18 @@ header {
         @include respond(xl) {
             font-size: 32px; //-6px
         } 
+        @include respond(lg) {
+            font-size: 28px; //-4px
+        } 
     }
 
     .main_text{
         width: 700px;
         @include respond(xl) {
             width: 600px;  //-100px
+        } 
+        @include respond(lg) {
+            width: 450px;  //-150px
         } 
 
         p {
@@ -287,6 +301,9 @@ header {
 
             @include respond(xl) {
                 font-size: 16px;  //-4px
+            }
+            @include respond(lg) {
+                font-size: 14px;  //-2px
             }
 
             &:first-child {
@@ -305,6 +322,9 @@ header {
     @include respond(xl) {
         height: 450px;  //-100px
     }
+    @include respond(lg) {
+        height: 380px;  //-70px
+    }
 
     &_images{
         width: 100%; 
@@ -312,27 +332,35 @@ header {
         justify-content: center;
         gap: 30px;
 
+        @include respond(xl) { gap: 25px; }
+        @include respond(lg) { gap: 20px; }
+        @include respond(md) { 
+            display: grid;
+            grid-template-columns: repeat(2, 220px);
+        }
+
         .image_container {
             height: 300px;
             display: flex;
             @include respond(xl) {
-                height: 220px;
+                height: 220px; //-80px
             }
+            @include respond(lg) { height: 170px; }
 
             img {
                 border-radius: 10px;
                 width: 300px;
                 object-fit: cover;
-                @include respond(xl) {
-                    width: 220px;
-                }
+
+                @include respond(xl) { width: 220px; }
+                @include respond(lg) { width: 170px; }
             }
         } 
     }
 
     button {
         margin-top: 50px;
-        background-color: $bg-secondary; /* Green */
+        background-color: $bg-secondary; 
         border: 3px solid $bg-primary;
         color: $bg-primary;
         padding: 12px 20px;
@@ -344,6 +372,7 @@ header {
         @include respond(xl) {
             font-size: 14px;
         }
+        @include respond(lg) { margin-top: 40px;}
             
         &:hover {
             cursor: pointer;
@@ -373,6 +402,9 @@ header {
             @include respond(xl) {
                 height: 500px;  //-100px
             }
+            @include respond(lg) {
+                height: 400px;  //-100px
+            }
         }
     }
     
@@ -386,6 +418,9 @@ header {
         @include respond(xl) {
             font-size: 16px; //-4px
         }
+        @include respond(lg) {
+            font-size: 14px; //-2px
+        }
 
         ul {
             list-style-type: circle;
@@ -398,6 +433,9 @@ header {
                 text-transform: uppercase;
                 @include respond(xl) {
                     font-size: 26px; //-4px
+                }
+                @include respond(lg) {
+                    font-size: 22px; //-4px
                 }
             }
 
@@ -429,13 +467,20 @@ header {
         @include respond(xl) {
             font-size: 32px; //-6px
         } 
+        @include respond(lg) {
+            font-size: 28px; //-4px
+        } 
     }
     p {
         color: $bg-primary;
         font-size: 16px;
         padding: 20px 0 40px 0;
+        text-align: center;
         @include respond(xl) {
             font-size: 14px;
+        } 
+        @include respond(lg) {
+            width: 60%;
         } 
     }
 
@@ -446,6 +491,9 @@ header {
         @include respond(xl) {
             width: 600px; //-100px
         } 
+        @include respond(lg) {
+            width: 500px; //-100px
+        }
 
         input, textarea, button {
             background-color: transparent;
@@ -456,6 +504,9 @@ header {
             letter-spacing: 1px;
             @include respond(xl) {
                 font-size: 16px;  //-2px
+            } 
+            @include respond(lg) {
+                font-size: 14px;  //-2px
             } 
         }
 
@@ -520,6 +571,7 @@ header {
 
 }
 
+// Pasākumi page
 .events {
     width: 100%;
     height: auto;
@@ -535,12 +587,19 @@ header {
         @include respond(xl) {
             font-size: 36px;    //-4px
         }
+        @include respond(lg) {
+            margin: 40px 0 20px 50px;
+            font-size: 32px;    //-4px
+        }
     }
 
     &_list {
         @include flex-col();
         justify-content: center;
         padding: 20px 70px;
+        @include respond(lg) {
+            padding: 20px 50px;
+        }
     }
 
     &_list_event {
@@ -553,12 +612,18 @@ header {
         box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.19);
         align-items: stretch;
         height: 400px;
+        @include respond(lg) {
+            height: 300px;
+        }
 
         .event_poster {
             width: 400px; 
             flex-shrink: 0;
             @include respond(xl) {
                 width: 350px;
+            } 
+            @include respond(lg) {
+                width: 200px;
             } 
 
             img {
@@ -571,14 +636,18 @@ header {
         }
 
         .event_desc {
-            display: flex;
-            flex-direction: column;
+            @include flex-col();
             padding: 30px;
             line-height: 1.7;
             letter-spacing: 1px;
             font-size: 22px;
             @include respond(xl) {
                 font-size: 18px;    //-4px
+            } 
+            @include respond(lg) {
+                padding: 20px;
+                line-height: 1.5;
+                font-size: 16px;    //-2px
             } 
 
             h1 {
@@ -589,6 +658,9 @@ header {
                 @include respond(xl) {
                     font-size: 28px; //-4px
                 } 
+                @include respond(lg) {
+                    font-size: 22px;    //-6px
+                }
             }
             #date_time {
                 font-weight: 500;
@@ -601,12 +673,17 @@ header {
                 font-size: 18px;
                 @include respond(xl) {
                     font-size: 16px;    //-2px
+                }
+                @include respond(lg) {
+                    padding-top: 10px;
+                    font-size: 14px;    //-2px
                 } 
             }
         }
     }
 }
 
+//Galerija page
 .gallery {
     @include flex-center();
     padding-top: 80px;
@@ -620,11 +697,14 @@ header {
         @include respond(xl) {
             font-size: 36px;  //-4px
         }
+        @include respond(lg) {
+            font-size: 32px;  //-4px
+        }
 
         &:first-child {
             padding-top: 50px; 
             @include respond(xl) {
-                padding-top: 30px;   //-20px
+                padding-top: 40px;   //-10px
             }
         }
     }
@@ -638,6 +718,11 @@ header {
         @include respond(xl) {
             grid-template-columns: repeat(4, 1fr);
             padding: 50px 0px;
+        }
+        @include respond(lg) {
+            grid-template-columns: repeat(3, 1fr);
+            padding: 40px 0px;
+            grid-gap: 40px 30px;
         }
         
         .image_wrapper {        // div for every image
@@ -724,6 +809,9 @@ header {
             @include respond(xl) {
                 max-width: 780px;  //-120px
             }
+            @include respond(lg) {
+                max-width: 560px;  
+            }
         }
 
         
@@ -762,6 +850,9 @@ footer {
         @include respond(xl) {
             font-size: 16px;  //-2px
         }
+        @include respond(lg) {
+            font-size: 14px;  //-2px
+        } 
     }
     
     .footer_div {
@@ -770,76 +861,81 @@ footer {
         color: white;
         justify-content: space-between;
         padding: 20px 70px 20px 50px;
-    }
-    
-    .logo_div {
-        @include flex-col();
-        text-align: left;
-        flex: 1;
-
-        img {
-            height:200px;
-            width: 200px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin-left: 30px;
-        }
-    }
-
-    .contacts {
-        @include flex-col();
-        text-align: left;
-        flex: 1;
-        margin-left: 50px;
 
         h1 {
             margin-top: 20px;
             margin-bottom: 20px;
             font-weight: 400;
-        }
-
-        p {
-            line-height: 2;
-        }
-    }
-
-    .socials {
-        @include flex-col();
-        text-align: right;
-        align-items: flex-end;
-        flex: 1;
-
-        h2 {
-            margin-top: 25px;
-            margin-bottom: 20px;
-            font-size: 28px;
+            font-size: 30px;
             @include respond(xl) {
-                font-size: 26px; //-2px
+                font-size: 28px; //-6px
+            }
+            @include respond(xl) {
+                font-size: 24px; //-4px
             }
         }
-        
-        &_links {
-            @include flex-row();
-            gap: 20px;
-            
-            a {
-                text-decoration: none;
-                transition-duration: 0.4s;
-            }
-            .fa {
-                font-size: 40px; 
-                color: white;
+    
+        .logo_div {
+            @include flex-col();
+            text-align: left;
+            flex: 1;
 
-                &-facebook:hover{
-                    color: #3B5998;
-                }
-                &-instagram:hover{
-                    color: #C82D94;
+            img {
+                height:200px;
+                width: 200px;
+                margin-bottom: 20px;
+                @include respond(lg) {
+                    height: 150px;
+                    width: 150px;
                 }
             }
-        }    
+
+            p {
+                margin-left: 30px;
+                @include respond(lg) {
+                    margin-left: 0px;
+                } 
+            }
+        }
+
+        .contacts {
+            @include flex-col();
+            text-align: left;
+            flex: 1;
+            margin-left: 50px;
+
+            p {
+                line-height: 2;
+            }
+        }
+
+        .socials {
+            @include flex-col();
+            text-align: right;
+            align-items: flex-end;
+            flex: 1;
+            
+            &_links {
+                @include flex-row();
+                gap: 20px;
+                
+                a {
+                    text-decoration: none;
+                    transition-duration: 0.4s;
+                }
+                .fa {
+                    font-size: 40px; 
+                    color: white;
+
+                    &-facebook:hover{
+                        color: #3B5998;
+                    }
+                    &-instagram:hover{
+                        color: #C82D94;
+                    }
+                }
+            }    
+        }
     }
 }
 
