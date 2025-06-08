@@ -26,7 +26,7 @@ $dark-aqua: #a6dfda;
 // Reusable media query mixin with common breakpoints
 @mixin respond($breakpoint) {
     @if $breakpoint == sm {
-        @media (max-width: 576px) { @content; }
+        @media (max-width: 560px) { @content; }
     } @else if $breakpoint == md {
         @media (max-width: 768px) { @content; }
     } @else if $breakpoint == lg {
@@ -306,12 +306,12 @@ header {
             }
             @include respond(md) {
                 font-size: 11px;  //-1px
-                width: 150px;   
+                width: 170px;   
                 padding: 12px;
             }
             @include respond(sm) {
                 font-size: 8px;  
-                width: 110px;   
+                width: 120px;   
                 padding: 7px;
             }
             
@@ -561,11 +561,10 @@ header {
     &_text {
         @include flex-center();
         line-height: 1.7;
-        
         font-size: 20px;
         width: 700px;
         padding-right: 30px;
-        margin: 30px 0;
+        margin: 40px 0;
 
         @include respond(xl) {
             font-size: 16px; //-4px
@@ -579,7 +578,7 @@ header {
         @include respond(sm) {
             font-size: 8px; 
             padding-right: 15px;
-            margin: 20px 0 30px -25px;
+            margin: 30px 0 30px -25px;
         }
 
         ul {
@@ -671,7 +670,6 @@ header {
         @include respond(sm) {
             font-size: 8px; 
             padding: 10px 0 25px 0;
-            width: 70%;
         } 
     }
 
@@ -689,7 +687,7 @@ header {
         @include respond(md) {
             width: 400px; //-100px
         }
-        @include respond(md) {
+        @include respond(sm) {
             width: 270px; 
         }
 
@@ -854,7 +852,7 @@ header {
         align-items: stretch;
         height: 400px;
         @include respond(lg) {
-            height: 300px;
+            height: 330px;
         }
         @include respond(md) {
             flex: 1;
@@ -908,11 +906,9 @@ header {
             @include respond(md) {
                 padding: 25px;
                 line-height: 1.7;
-                font-size: 12px;    //-2px
+                font-size: 14px;    //-2px
             } 
-            @include respond(sm) {
-                font-size: 14px;    
-            }
+            
 
             h1 {
                 font-weight: 600;
@@ -957,6 +953,9 @@ header {
                 @include respond(lg) {
                     padding-top: 10px;
                     font-size: 14px;    //-2px
+                } 
+                @include respond(md) {
+                    font-size: 12px;    //-2px
                 } 
             }
             .hidden-desc {
@@ -1027,7 +1026,7 @@ header {
             grid-gap: 20px;
         }
         @include respond(sm) {
-            grid-gap: 10px;
+            grid-gap: 13px;
             padding: 30px 0px;
         }
 

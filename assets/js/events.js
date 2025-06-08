@@ -28,7 +28,7 @@ async function loadEvents() {
         const container = document.querySelector('.events_list');
 
         events.forEach((event, index) => {
-            const isSmallScreen = window.innerWidth <= 576;
+            const isSmallScreen = window.innerWidth <= 560;
 
             container.innerHTML += `
                 <div class="events_list_event">
@@ -54,7 +54,7 @@ async function loadEvents() {
             `;
         });
 
-        if (window.innerWidth <= 576) {
+        if (window.innerWidth <= 560) {
             setupShowMoreButtons();
         }
     }
