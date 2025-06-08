@@ -16,6 +16,7 @@
     "sass": "^1.87.0"
   },
   "dependencies": {
+    "express": "^5.1.0",
     "nodemailer": "^7.0.3"
   }
 }
