@@ -47,6 +47,7 @@ html, body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
+    letter-spacing: 1px;
 }
 
 // Header and sidebar stilization
@@ -92,7 +93,6 @@ header {
         text-decoration: none;
         font-size: 16px;
         color:white;
-        letter-spacing: 1px;
         transition: 0.4s;
 
         @include respond(xl) { font-size: 14px; }
@@ -225,6 +225,10 @@ header {
         height: 450px;  
         padding-top: 65px;
     } 
+    @include respond(sm) {
+        height: 320px;  
+        padding-top: 50px;
+    } 
 
     &_block {
         @include flex-col();
@@ -235,7 +239,10 @@ header {
         @include respond(md) {
             padding: 0 40px;
         } 
-        
+        @include respond(sm) {
+            padding: 0 20px;
+        }
+
         h1 {
             font-size: 45px;
             font-weight: 300;
@@ -250,6 +257,10 @@ header {
             @include respond(md) {
                 font-size: 22px;  
             } 
+            @include respond(sm) {
+                font-size: 14px;  
+                margin-bottom: 10px; 
+            } 
             
         }
 
@@ -258,7 +269,7 @@ header {
             max-width: 500px;
             margin-bottom: 30px; 
             line-height: 2;
-            letter-spacing: 1px;
+            
             @include respond(xl) {
                 font-size: 16px;  //-4px
             }
@@ -267,6 +278,10 @@ header {
             } 
             @include respond(md) {
                 font-size: 12px;  //-3px
+            } 
+            @include respond(sm) {
+                font-size: 8px; 
+                margin-bottom: 10px;  
             } 
         }
 
@@ -294,7 +309,12 @@ header {
                 width: 150px;   
                 padding: 12px;
             }
-
+            @include respond(sm) {
+                font-size: 8px;  
+                width: 110px;   
+                padding: 7px;
+            }
+            
             &:hover {
                 cursor: pointer;
                 background-color: $bg-primary;
@@ -336,6 +356,9 @@ header {
     @include respond(md) {
         height: 500px;  //100px
     } 
+    @include respond(sm) {
+        height: 370px;  
+    } 
 
     h1 {
         font-size: 38px;
@@ -353,6 +376,11 @@ header {
             font-size: 22px; 
             margin-bottom: 20px;
         } 
+        @include respond(sm) {
+            font-size: 16px; 
+            margin-bottom: 10px;
+            margin-top: 20px;
+        } 
     }
 
     .main_text{
@@ -365,18 +393,19 @@ header {
         } 
         @include respond(md) {
             width: 400px;  //-50px
-            font-size: 22px; 
             background-color: #ffffffb6;
             padding: 10px;
             box-shadow: 0px 0px 20px 10px #ffffffb6;
         } 
+        @include respond(sm) {
+            width: 250px;
+        }
         
 
         p {
             font-size: 20px;
             text-indent: 50px;
             text-align: justify;
-            letter-spacing: 1px;
             margin-bottom: 10px;
             line-height: 1.5;
 
@@ -388,6 +417,9 @@ header {
             }
             @include respond(md) {
                 font-size: 12px;  //-2px
+            }
+            @include respond(sm) {
+                font-size: 8px;  
             }
 
             &:first-child {
@@ -412,6 +444,9 @@ header {
     @include respond(md) {
         height: 550px;  
     }
+    @include respond(sm) {
+        height: 410px;  
+    }
 
     &_images{
         width: 100%; 
@@ -426,15 +461,19 @@ header {
             grid-template-columns: repeat(2, 200px);
             gap: 20px 30px;
         }
+        @include respond(sm) { 
+            grid-template-columns: repeat(2, 150px);
+            gap: 10px;
+        }
 
         .image_container {
             height: 300px;
             display: flex;
-            @include respond(xl) {
-                height: 220px; //-80px
-            }
+            @include respond(xl) { height: 220px; }
             @include respond(lg) { height: 170px; }
             @include respond(md) { height: 200px; }
+            @include respond(sm) { height: 150px; }
+
             img {
                 border-radius: 10px;
                 width: 300px;
@@ -443,6 +482,10 @@ header {
                 @include respond(xl) { width: 220px; }
                 @include respond(lg) { width: 170px; }
                 @include respond(md) { width: 200px; }
+                @include respond(sm) { 
+                    width: 150px; 
+                    border-radius: 5px;
+                }
             }
         } 
     }
@@ -458,6 +501,7 @@ header {
         font-weight: 500;
         transition-duration: 0.4s;
         border-radius: 5px;
+
         @include respond(xl) {
             font-size: 16px;
         }
@@ -466,6 +510,12 @@ header {
             font-size: 12px;
             padding: 10px 20px;
             margin-top: 30px;
+        }
+        @include respond(sm) {
+            font-size: 10px;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-width: 2px;
         }
             
         &:hover {
@@ -485,13 +535,6 @@ header {
     height: auto;
     background-color: $bg-thirdly;
 
-    // @include respond(xl) {
-    //     height: 550px; 
-    // }
-    // @include respond(md) {
-    //     height: 500px; 
-    // }
-
     &_image{
         margin-left: 30px;
         @include respond(md) {
@@ -509,13 +552,16 @@ header {
             @include respond(md) {
                 height: 300px;  //-100px
             }
+            @include respond(sm) {
+                height: 210px;  
+            }
         }
     }
     
     &_text {
         @include flex-center();
         line-height: 1.7;
-        letter-spacing: 1px;
+        
         font-size: 20px;
         width: 700px;
         padding-right: 30px;
@@ -529,6 +575,11 @@ header {
         }
         @include respond(md) {
             font-size: 12px; //-2px
+        }
+        @include respond(sm) {
+            font-size: 8px; 
+            padding-right: 15px;
+            margin: 20px 0 30px -25px;
         }
 
         ul {
@@ -548,6 +599,10 @@ header {
                 }
                 @include respond(md) {
                     font-size: 20px; //-4px
+                }
+                @include respond(sm) {
+                    font-size: 14px; 
+                    padding-bottom: 10px;
                 }
             }
 
@@ -576,6 +631,9 @@ header {
     @include respond(md) {
         height: 550px; //-50px
     } 
+    @include respond(sm) {
+        height: 400px; 
+    } 
 
     h1 {
         font-size: 38px;
@@ -588,8 +646,11 @@ header {
         @include respond(lg) {
             font-size: 28px; //-4px
         } 
-        @include respond(lg) {
+        @include respond(md) {
             font-size: 24px; //-4px
+        } 
+        @include respond(sm) {
+            font-size: 16px; 
         } 
     }
     p {
@@ -607,12 +668,18 @@ header {
         @include respond(md) {
             font-size: 12px;
         } 
+        @include respond(sm) {
+            font-size: 8px; 
+            padding: 10px 0 25px 0;
+            width: 70%;
+        } 
     }
 
     form {
         width: 700px;
         @include flex-center();
         flex-direction: column;
+
         @include respond(xl) {
             width: 600px; //-100px
         } 
@@ -622,14 +689,18 @@ header {
         @include respond(md) {
             width: 400px; //-100px
         }
+        @include respond(md) {
+            width: 270px; 
+        }
+
         input, textarea, button {
             background-color: transparent;
             outline: none;
             font-size: 18px;
             border-radius: 5px;
             line-height: 1.5;
-            letter-spacing: 1px;
             background-color: white;
+
             @include respond(xl) {
                 font-size: 16px;  //-2px
             } 
@@ -639,14 +710,22 @@ header {
             @include respond(md) {
                 font-size: 12px;  //-2px
             } 
+            @include respond(sm) {
+                font-size: 10px;  
+            } 
         }
 
         input, textarea {
             border: 3px solid $dark-aqua;
             padding: 15px;
             color: $dark-aqua;
+
             @include respond(xl) {
                padding: 10px; //-5px
+            } 
+            @include respond(sm) {
+               padding: 8px; 
+               border-width: 2px;
             } 
 
             &::placeholder {
@@ -666,6 +745,9 @@ header {
             margin-bottom: 20px;
             width: 100%;
 
+            @include respond(sm) {
+               margin-bottom: 10px; 
+            } 
             input {
                 width: 100%;
             }
@@ -676,9 +758,14 @@ header {
             @include flex-col();
             width: 100%;
             gap: 20px;
-
+            @include respond(sm) {
+               gap: 10px; 
+            } 
             textarea {
                 height: 100px;
+                @include respond(sm) {
+                    height: 80px; 
+                } 
             }
         }
 
@@ -688,8 +775,13 @@ header {
             font-weight: 500;
             transition-duration: 0.4s;
             padding: 10px;
+
             @include respond(xl) {
-                padding: 8px; //-2px
+                padding: 8px; 
+            }
+            @include respond(sm) {
+                padding: 6px; 
+                border-width: 2px;
             }
 
             &:hover {
@@ -709,6 +801,7 @@ header {
     @include flex-col();
     padding-top: 80px;
     background-color: $bg-thirdly;
+
     @include respond(md) {
         padding-top: 65px;
         align-items: center;
@@ -722,6 +815,7 @@ header {
         font-weight: 500;
         font-size: 40px;
         color: $bg-primary;
+
         @include respond(xl) {
             font-size: 36px;    //-4px
         }
@@ -781,7 +875,7 @@ header {
                 height: 350px;
             } 
             @include respond(sm) {
-                height: 250px;
+                height: 230px;
             } 
 
             img {
@@ -801,8 +895,8 @@ header {
             @include flex-col();
             padding: 30px;
             line-height: 1.7;
-            letter-spacing: 1px;
             font-size: 22px;
+
             @include respond(xl) {
                 font-size: 18px;    //-4px
             } 
@@ -814,8 +908,11 @@ header {
             @include respond(md) {
                 padding: 25px;
                 line-height: 1.7;
-                font-size: 16px;    //-2px
+                font-size: 12px;    //-2px
             } 
+            @include respond(sm) {
+                font-size: 14px;    
+            }
 
             h1 {
                 font-weight: 600;
@@ -828,38 +925,32 @@ header {
                 @include respond(lg) {
                     font-size: 22px;    //-6px
                 }
-                @include respond(md) {
-                    font-size: 24px;    
+                @include respond(sm) {
+                    font-size: 18px;    
                 }
             }
-            #date_time {
-                font-weight: 500;
-            }
-            #price, #age {
-                font-weight: 500;
-            }
-            #more {
-                @include respond(sm) {
-                    display: block;
-                } 
-            }
 
+            #date_time, #price, #age  {
+                font-weight: 500;
+            }
+            
             .show-more-btn {
                 border: none;
                 text-align: left;
                 margin-top: 10px;
-                font-size: 16px;
+                font-size: 12px;
                 background-color: transparent;
                 padding: 0;
-                letter-spacing: 1px;
                 color: $bg-primary;
                 font-weight: 500;
                 font-family: "Poppins", sans-serif;
+                letter-spacing: 1px;
             }
 
             #desc {
                 padding-top: 30px;
                 font-size: 18px;
+
                 @include respond(xl) {
                     font-size: 16px;    //-2px
                 }
@@ -870,7 +961,7 @@ header {
             }
             .hidden-desc {
                 padding-top: 10px;
-                font-size: 14px;
+                font-size: 12px;
             }
         }
     }
@@ -1086,7 +1177,7 @@ footer {
     @include flex-center();
     background-color: $bg-primary;
     width: 100%;
-    letter-spacing: 1px;
+    
     p {
         font-size: 18px;
         @include respond(xl) {
@@ -1099,7 +1190,7 @@ footer {
             font-size: 13px;  
         } 
         @include respond(sm) {
-            font-size: 12px;  
+            font-size: 10px;  
         } 
     }
     
@@ -1113,6 +1204,9 @@ footer {
         @include respond(md) { 
             padding: 30px;  
         } 
+        @include respond(sm) { 
+            padding: 20px 30px;  
+        } 
 
         h1 {
             margin-bottom: 20px;
@@ -1125,7 +1219,9 @@ footer {
                 font-size: 24px; //-4px
             }
             @include respond(sm) {
-                font-size: 20px; //-4px
+                font-size: 16px;
+                margin-bottom: 15px;
+                margin-top: 10px;
             }
 
         }
@@ -1207,7 +1303,7 @@ footer {
                         font-size: 35px; 
                     } 
                     @include respond(sm) {
-                        font-size: 30px; 
+                        font-size: 25px; 
                     } 
 
                     &-facebook:hover{

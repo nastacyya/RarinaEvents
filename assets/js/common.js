@@ -112,10 +112,12 @@ export async function fetchLanguageData(lang) {
     const header_a = document.getElementById('header');
     if(lang == "ru"){
         document.body.style.fontFamily = '"Nunito Sans", sans-serif';
+        document.body.style.letterSpacing = "0px";
         header_a.style.fontWeight = "600";
     } else {
         document.body.style.fontFamily = '';
         header_a.style.fontWeight = "500";
+        document.body.style.letterSpacing = "1px";
     }
     return response.json();
 }
