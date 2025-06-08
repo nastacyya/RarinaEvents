@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error(`Element with id "${userPreferredLanguage}" not found`);
     }
 
+    document.getElementById('about_us').style.color = "#AFDED9";
 });
 
 

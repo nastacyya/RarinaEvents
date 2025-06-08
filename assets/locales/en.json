@@ -42,5 +42,7 @@
     
     "closest_events": "Upcoming Events",
     "events_photos": "Event Photos",
-    "interior_photos": "Interior Photos"
+    "interior_photos": "Interior Photos",
+    "show_more": "Show more",
+    "show_less": "Show less"
 }

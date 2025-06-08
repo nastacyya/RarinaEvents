@@ -42,7 +42,8 @@
     
     "closest_events": "Tuvākie pasākumi",
     "events_photos": "Pasākumu bildes",
-    "interior_photos": "Interjera bildes"
+    "interior_photos": "Interjera bildes",
+    "show_more": "Lasīt vairāk",
+    "show_less": "Lasīt mazāk"
 
-    
 }
