@@ -2,7 +2,45 @@
     "about_us": "About Us",
     "events": "Events",
     "gallery": "Gallery",
-    "follow_us": "Follow Us",
+    "prices": "Prices",
     "contacts": "Contacts",
-    "rights": "All rights reserved."
+
+    "comfort_place": "A comfortable place for your celebrations and leisure!",
+    "birthday_party": "Birthday celebrations, themed parties, workshops, creative activities, mom meetups, and togetherness.",
+    "aim": "Our goal is to make this world a better place. With the help of family traditions and celebrations, we will give you genuine, heartfelt emotions and help you become much happier.",
+    "family": "Every family has its own celebrations. Every person has their own emotions and memories when they hear the word \"celebration.\" For some, it's birthdays, for others New Year's, and for some - March 8th. Of course, shared family events strengthen the bond between its members. Especially for children - every celebration is important. For children, celebrations are always a vivid event. They eagerly await any holiday.",
+    "studio": "Want to have an unforgettable celebration for you or your child? We offer you our family studio.",
+    "rarina": "RARINA EVENT is a place for children's/adults' themed parties, graduations, and all kinds of family events.",
+
+    "offer": "We offer the following for your celebrations:",
+    "capacity": "Room capacity +/- 50 people (200 m²)",
+    "kitchen": "Kitchen area - kettle, coffee machine, refrigerator, microwave, dishwasher",
+    "drinks": "Water, tea, and coffee",
+    "photo_corner": "Photo corner",
+    "baby": "Everything for babies' comfort (changing table, high chair, potty)",
+    "toy_corner": "Play area for the little ones, sand drawing, busy boards",
+    "media": "Music player, Smart TV, Wi-Fi",
+    "pinjata": "Hook for piñata hanging, novuss, air hockey",
+    "dining": "Dining area - adult and children's tables",
+    "cleaning": "Room cleaning and disinfection after each event",
+
+    "see_events": "View Events",
+    "see_gallery": "View Gallery",
+
+    "contact_us": "Contact Us",
+    "protected": "(Your personal data will not be shared with third parties and will be used for communication only)",
+    "fname": "Name*",
+    "phone_nr": "Phone*",
+    "email": "Email*",
+    "message": "Message*",
+    "submit": "Submit",
+    "submit_success": "Thank you for your message! We will contact you shortly.",
+    "submit_error": "An error occurred while sending the message. Please write to us at rarina.event@gmail.com. We apologize for the inconvenience!",
+
+    "follow_us": "Follow Us",
+    "rights": "All rights reserved.",
+    
+    "closest_events": "Upcoming Events",
+    "events_photos": "Event Photos",
+    "interior_photos": "Interior Photos"
 }

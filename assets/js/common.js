@@ -2,7 +2,7 @@ export async function loadHeader() {
     const response = await fetch('/assets/partials/header.html');
     const data = await response.text();
     document.getElementById('header_div').innerHTML = data;
-
+    
     // Set up language switch buttons
     ['lv', 'ru', 'en'].forEach(lang => {
         const langBtn = document.getElementById(lang);
@@ -78,10 +78,29 @@ export async function loadFooter() {
         e.preventDefault();
         foooter.scrollIntoView();
     })
+
+    window.addEventListener("resize", () => {
+        const contacts = document.querySelector(".contacts");
+        const links = document.querySelector(".socials_links");
+        const socials = document.querySelector(".socials");
+        if (window.innerWidth <= 768) {
+            contacts.appendChild(links);
+        } else {
+            socials.appendChild(links);
+        }
+    });
 }
 
 export async function fetchLanguageData(lang) {
     const response = await fetch(`/assets/locales/${lang}.json`);
+    const header_a = document.getElementById('header');
+    if(lang == "ru"){
+        document.body.style.fontFamily = '"Nunito Sans", sans-serif';
+        header_a.style.fontWeight = "700";
+    } else {
+        document.body.style.fontFamily = '';
+        header_a.style.fontWeight = "500";
+    }
     return response.json();
 }
 
@@ -102,4 +121,5 @@ export function updateContent(data) {
             element.placeholder = data[key];
         }
     });
+    
 }
