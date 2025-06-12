@@ -90,6 +90,10 @@ app.get('/gallery', (req, res) => {
   res.sendFile(path.join(__dirname, '/pages/gallery.html'));
 });
 
+app.get('/sitemap.xml', (req, res) => {
+  res.sendFile(path.join(__dirname, 'sitemap.xml'));
+});
+
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
