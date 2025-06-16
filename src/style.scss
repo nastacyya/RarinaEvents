@@ -38,7 +38,7 @@ $light-pink: #ffffff;
     } @else if $breakpoint == xl {
         @media (max-width: 1300px) { @content; }    
     } @else if $breakpoint == xs {
-        @media (max-width: 391px) { @content; }    
+        @media (max-width: 426px) { @content; }    
     }
 }
 
