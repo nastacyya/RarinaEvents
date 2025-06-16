@@ -90,6 +90,10 @@ app.get('/gallery', (req, res) => {
   res.sendFile(path.join(__dirname, '/pages/gallery.html'));
 });
 
+app.get('/prices', (req, res) => {
+  res.sendFile(path.join(__dirname, '/pages/prices.html'));
+});
+
 app.get('/sitemap.xml', (req, res) => {
   res.sendFile(path.join(__dirname, 'sitemap.xml'));
 });

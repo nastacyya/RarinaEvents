@@ -44,6 +44,16 @@
     "events_photos": "Pasākumu bildes",
     "interior_photos": "Interjera bildes",
     "show_more": "Lasīt vairāk",
-    "show_less": "Lasīt mazāk"
-
+    "show_less": "Lasīt mazāk",
+    
+    "rent_price": "Bumbu istabas īres cenas",
+    "day": "Diena",
+    "time": "Laiks",
+    "price_eur": "Cena, eur",
+    "mon-thr": "Pirmdiena - Ceturtdiena",
+    "fri-sun": "Piektdiena - Svētdiena",
+    "next_hour_40": "* Nākamā stunda 40 EUR",
+    "next_hour_50": "* Nākamā stunda 50 EUR",
+    "additional": "* Papildus laiks iespējams tikai, ja nav citu pasākumu",
+    "included": "3h īres maksā iekļaujas kafijas aparāta un tējkannas izmantošana, dzeramais ūdens, bumbu baseins, bizibords, gaisa hokejs un citas istabas spēles."
 }

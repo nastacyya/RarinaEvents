@@ -1,23 +1,12 @@
 [
     {
-        "image": "_DSC6022.jpg",
-        "title": "Māmiņu Rīti",
-        "dateTime": "Katru otrdienu, ceturtdienu, sestdienu | 10:00-12:00",
-        "age": "0-5 g.",
-        "price": 10,
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Brīdis mieram, kafijai un gardām uzkodām, kamēr bērni izbauda spēles un prieku bērnu istabā! Liels bumbu baseins, rotaļlietas, gaisa hokejs, smilšu zīmēšana, attīstošie dēlīši un daudz citu aktivitāšu, kas aizraus mazos un ļaus mammas baudīt laiku sev!",
-        "language": "lv"
-    },
-    {
-        "image": "_DSC6752.jpg",
-        "title": "Skaistuma Diena Mazajām Princesēm",
-        "dateTime": "14.06.25 | 12:00-14:00",
+        "image": "studija.jpeg",
+        "title": "Bērnu mākslas studija",
+        "dateTime": "18.06.25 | 18:00 (3–5 gadi) | 19:00 (6–8 gadi)",
         "age": "",
-        "price": 25,
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Neaizmirstama diena mazajām dāmām ar rotaļīgu manikīru, spīguļiem, strazīšiem, košām frizūrām un krāsainām bizītēm! Pēc pārvērtībām notiks īsta modes skate, fotosesija, gardi kārumi, un jautra mūzika. Svētki, kuros katra meitene sajutīsies kā īsta princese!",
-        "language": "lv"
+        "price": 10,
+        "reserve": "Brālis + māsa – 15€ | Iepriekšējā pieteikšanās",
+        "description": "Radoša un iedvesmojoša gleznošanas nodarbība, kur mazie mākslinieki profesionālas mākslinieces vadībā apgūs krāsu jaukšanu un gleznošanas pamatus! Katrs dalībnieks radīs savu unikālo darbu – krāsainu gleznu ar tukānu. Piedzīvojums, kurā attīstīsies fantāzija, radošums un prieks par radīto mākslu!"
     },
     {
         "image": "WhatsApp Image 2025-05-19 at 14.30.15.jpeg",
@@ -26,8 +15,16 @@
         "age": "",
         "price": 45,
         "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Profesionāla floriste un māksliniece iemācīs veidot oriģinālu sāļo pušķi no desiņām, siera un dārzeņiem, ko katra dalībniece ņems līdzi svētkiem — skaisti iepakotu un gatavu dāvināšanai vai svinēšanai. Tikmēr par bērniem rūpēsies sertificēta auklīte — jūs baudīsiet mieru un radošu procesu, zinot, ka bērni ir drošībā!",
-        "language": "lv"
+        "description": "Profesionāla floriste un māksliniece iemācīs veidot oriģinālu sāļo pušķi no desiņām, siera un dārzeņiem, ko katra dalībniece ņems līdzi svētkiem — skaisti iepakotu un gatavu dāvināšanai vai svinēšanai. Tikmēr par bērniem rūpēsies sertificēta auklīte — jūs baudīsiet mieru un radošu procesu, zinot, ka bērni ir drošībā!"
+    },
+    {
+        "image": "lv_lesson.jpeg",
+        "title": "Spēlējam un Mācāmies! Latviešu Valodas Nodarbība Bērniem",
+        "dateTime": "01.07.25 | 18:00",
+        "age": "6-8 gadi",
+        "price": 10,
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Draudzīga un aktīva latviešu valodas nodarbība mazākumtautību pirmsskolas bērniem! Mācīsimies valodu caur radošām spēlēm, kustību aktivitātēm un dzīvu komunikāciju ar skolotāju un vienaudžiem. Viegla un aizraujoša pieeja latviešu valodai – spēlējoties, draudzējoties un atklājot valodas burvību!"
     }
 
 ]

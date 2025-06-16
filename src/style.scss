@@ -5,6 +5,10 @@ $bg-primary: #FA5A76;
 $bg-secondary: #def9f5;
 $bg-thirdly: #FFF8EC;
 $dark-aqua: #a6dfda;
+$rounded-20: 20px;
+$rounded-10: 10px;
+$dark-pink: #dc2e4b;
+$light-pink: #ffffff;
 
 
 // Mixins
@@ -33,6 +37,8 @@ $dark-aqua: #a6dfda;
         @media (max-width: 992px) { @content; }
     } @else if $breakpoint == xl {
         @media (max-width: 1300px) { @content; }    
+    } @else if $breakpoint == xs {
+        @media (max-width: 391px) { @content; }    
     }
 }
 
@@ -797,8 +803,10 @@ header {
     width: 100%;
     height: auto;
     @include flex-col();
+    align-items: center;
     padding-top: 80px;
     background-color: $bg-thirdly;
+    min-height: 80vh;
 
     @include respond(md) {
         padding-top: 65px;
@@ -809,7 +817,7 @@ header {
     }
 
     #events_title {
-        margin: 50px 0 20px 70px;
+        margin-top: 50px;
         font-weight: 500;
         font-size: 40px;
         color: $bg-primary;
@@ -818,11 +826,10 @@ header {
             font-size: 36px;    //-4px
         }
         @include respond(lg) {
-            margin: 40px 0 20px 50px;
+            margin-top: 40px;
             font-size: 32px;    //-4px
         }
         @include respond(md) {
-            margin: 0;
             margin-top: 30px;
             font-size: 28px;  //-4px
         }
@@ -834,7 +841,7 @@ header {
     &_list {
         @include flex-col();
         justify-content: center;
-        padding: 20px 70px;
+        padding: 40px 70px;
         @include respond(md) {
             padding: 30px 0;
             width: 80%;
@@ -850,10 +857,7 @@ header {
         color: #343434;
         box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.19);
         align-items: stretch;
-        height: 400px;
-        @include respond(lg) {
-            height: 330px;
-        }
+        height: auto;
         @include respond(md) {
             flex: 1;
             flex-direction: column;
@@ -899,7 +903,6 @@ header {
                 font-size: 18px;    //-4px
             } 
             @include respond(lg) {
-                padding: 20px;
                 line-height: 1.5;
                 font-size: 16px;    //-2px
             } 
@@ -1026,7 +1029,7 @@ header {
             grid-gap: 20px;
         }
         @include respond(sm) {
-            grid-gap: 13px;
+            grid-gap: 15px;
             padding: 30px 0px;
         }
 
@@ -1045,8 +1048,12 @@ header {
                 height: 150px;  
             }
             @include respond(sm) {
-                width: 100px;   
-                height: 100px;  
+                width: 110px;   
+                height: 110px;  
+            }
+            @include respond(xs) {
+                width: 90px;   
+                height: 90px; 
             }
 
             &::after {
@@ -1324,4 +1331,167 @@ iframe {
     @include respond(md) {
         height: 300px; 
     } 
+}
+
+.prices {
+    width: 100%;
+    @include flex-col();
+    background-color: $bg-thirdly;
+    padding-top: 80px;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 80vh;
+
+    @include respond(md) {
+        padding-top: 65px;
+    }
+    @include respond(sm) {
+        padding-top: 50px;
+    }
+    h1 {
+        color: $bg-primary;
+        font-weight: 500;
+        font-size: 36px;
+        margin-top: 50px;
+        text-align: center;
+        padding: 0 10px;
+        
+        @include respond(lg) {
+            font-size: 32px;
+        }
+        @include respond(md) {
+            font-size: 28px;
+        }
+        @include respond(sm) {
+            margin-top: 40px;
+            font-size: 20px;
+        }
+    }
+    p {
+        font-size: 24px;
+        color: $bg-primary;
+        margin-bottom: 100px;
+        font-weight: 400;
+        width: 80%;
+        text-align: center;
+        @include respond(lg) {
+            font-size: 20px;
+        }
+        @include respond(md) {
+            font-size: 18px;
+        }
+        @include respond(sm) {
+            margin-bottom: 50px;
+            font-size: 14px;
+            width: 85%;
+        }
+    }
+    
+    table {
+        width: 80%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin: 40px 100px 50px 100px;
+        text-align: center;
+        background-color: $light-pink;
+        box-shadow: 0px 0px 20px 10px rgb(0, 0, 0, 0.2);
+        border-radius: 23px;
+        border: 3px solid $dark-pink;
+        @include respond(sm) {
+            width: 85%;
+            border-radius: 13px;
+            margin-bottom: 40px;
+            margin-bottom: 30px;
+        }
+
+        /* Header top corners */
+        thead tr:first-child th:first-child {
+            border-top-left-radius: $rounded-20;
+            @include respond(sm) {
+                border-top-left-radius: $rounded-10;
+            }
+        }
+        thead tr:first-child th:last-child {
+            border-top-right-radius: $rounded-20;
+            @include respond(sm) {
+                border-top-right-radius: $rounded-10;
+            }
+        }
+
+        /* Last row bottom corners */
+        tbody tr:last-of-type td:first-child {
+            border-bottom-left-radius: $rounded-20;
+            @include respond(sm) {
+                border-bottom-left-radius: $rounded-10;
+            }
+        }
+        tbody tr:last-of-type td:last-child {
+            border-bottom-right-radius: $rounded-20;
+            @include respond(sm) {
+                border-bottom-right-radius: $rounded-10;
+            }
+        }
+
+        th, td {
+            font-size: 20px;
+            border: 0.5px solid $dark-pink;
+            padding: 12px;
+            color: #3e3e3e;
+            @include respond(lg) {
+                font-size: 16px;
+            }
+            @include respond(md) {
+               font-size: 14px;
+            }
+            @include respond(sm) {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+
+        th {
+            font-size: 26px;
+            text-transform: uppercase;
+            background-color: $bg-primary;
+            color: $light-pink;
+            font-weight: 500;
+            padding: 18px;
+            border-bottom: 2px solid $dark-pink;
+            @include respond(lg) {
+                font-size: 20px;
+            }
+            @include respond(sm) {
+                padding: 10px;
+                font-size: 15px;
+            }
+            
+        }
+        td[colspan] {
+            font-style: italic;
+        }
+
+        .days {
+            font-weight: 500;
+        }
+        .nowrap {
+            white-space: nowrap;
+            @include respond(xs) {
+                white-space: normal;
+            }
+        }
+        .emoji {
+            font-size: 34px;
+            vertical-align: middle;
+
+            @include respond(lg) {
+                font-size: 28px;
+            }
+            @include respond(md) {
+               font-size: 25px;
+            }
+            @include respond(sm) {
+                font-size: 18px;
+            }
+        }
+    }
 }
