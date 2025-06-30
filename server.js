@@ -53,19 +53,18 @@ app.get('/api/event_data', (req, res) => {
 app.post('/send', async (req, res) => {
   const { firstname, phone, email, message } = req.body;
 
-  // Konfigurē Nodemailer
   const transporter = nodemailer.createTransport({
-      service: 'Gmail', // vai citu, piem. 'Outlook', 'Yahoo'
+      service: 'Gmail',
       auth: {
-          user: '15saveika@gmail.com', // ievietot rarina email vēlāk
-          pass: 'hbfl fryy nerx wkwt' // App Password
+          user: 'rarina.event@gmail.com', 
+          pass: 'jkoa yyfy ngou jcms' // App Password
       }
   });
 
   const mailOptions = {
       from: email,
-      to: '15saveika@gmail.com',
-      subject: 'Jauns ziņojums no rarina.com vietnes',
+      to: 'rarina.event@gmail.com',
+      subject: 'Jauns ziņojums no rarinaevent.lv vietnes',
       text: `Vārds: ${firstname}\nTālrunis: ${phone}\nE-pasts: ${email}\nZiņa: ${message}`
   };
 

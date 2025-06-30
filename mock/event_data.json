@@ -1,21 +1,12 @@
 [
     {
-        "image": "studija.jpeg",
-        "title": "Bērnu mākslas studija",
-        "dateTime": "18.06.25 | 18:00 (3–5 gadi) | 19:00 (6–8 gadi)",
+        "image": "atlaide.jpeg",
+        "title": "Vasaras akcija bērnu pasākumu telpas īrei!",
+        "dateTime": "01.07.25 - 31.08.25",
         "age": "",
-        "price": 10,
-        "reserve": "Brālis + māsa – 15€ | Iepriekšējā pieteikšanās",
-        "description": "Radoša un iedvesmojoša gleznošanas nodarbība, kur mazie mākslinieki profesionālas mākslinieces vadībā apgūs krāsu jaukšanu un gleznošanas pamatus! Katrs dalībnieks radīs savu unikālo darbu – krāsainu gleznu ar tukānu. Piedzīvojums, kurā attīstīsies fantāzija, radošums un prieks par radīto mākslu!"
-    },
-    {
-        "image": "WhatsApp Image 2025-05-19 at 14.30.15.jpeg",
-        "title": "Meistarklase “Sāļais pušķis Līgo svētkiem”",
-        "dateTime": "19.06. un 20.06. | 18:00 - 20:00",
-        "age": "",
-        "price": 45,
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Profesionāla floriste un māksliniece iemācīs veidot oriģinālu sāļo pušķi no desiņām, siera un dārzeņiem, ko katra dalībniece ņems līdzi svētkiem — skaisti iepakotu un gatavu dāvināšanai vai svinēšanai. Tikmēr par bērniem rūpēsies sertificēta auklīte — jūs baudīsiet mieru un radošu procesu, zinot, ka bērni ir drošībā!"
+        "price": "Cena tiek noteikta individuāli – atkarībā no dienas (darba diena vai brīvdiena)",
+        "reserve": "",
+        "description": "Lieliska iespēja īrēt bērnu istabu ar -50% atlaidi! Cenā iekļauts viss – rotaļu istaba, milzīgs bumbu baseins, gaisa hokejs, attīstošais dēlis un vēl daudz kas cits. Ideāli piemērota dzimšanas dienām, izlaidumiem un citiem svētkiem!"
     },
     {
         "image": "lv_lesson.jpeg",
@@ -26,5 +17,4 @@
         "reserve": "Iepriekšējā pieteikšanās",
         "description": "Draudzīga un aktīva latviešu valodas nodarbība mazākumtautību pirmsskolas bērniem! Mācīsimies valodu caur radošām spēlēm, kustību aktivitātēm un dzīvu komunikāciju ar skolotāju un vienaudžiem. Viegla un aizraujoša pieeja latviešu valodai – spēlējoties, draudzējoties un atklājot valodas burvību!"
     }
-
 ]

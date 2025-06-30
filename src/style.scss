@@ -38,7 +38,7 @@ $light-pink: #ffffff;
     } @else if $breakpoint == xl {
         @media (max-width: 1300px) { @content; }    
     } @else if $breakpoint == xs {
-        @media (max-width: 426px) { @content; }    
+        @media (max-width: 415px) { @content; }    
     }
 }
 
@@ -423,9 +423,11 @@ header {
             }
             @include respond(md) {
                 font-size: 12px;  //-2px
+                text-indent: 40px;
             }
             @include respond(sm) {
                 font-size: 8px;  
+                text-indent: 20px;
             }
 
             &:first-child {
@@ -877,7 +879,7 @@ header {
                 height: 350px;
             } 
             @include respond(sm) {
-                height: 230px;
+                height: auto;
             } 
 
             img {

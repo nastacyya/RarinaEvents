@@ -39,7 +39,7 @@ async function loadEvents() {
                         <h1>${event.title}</h1>
                         <p id="date_time">${event.dateTime}</p>
                         <p id="age">${event.age}</p>
-                        <p id="price">${event.price === 0 ? 'Bezmaksas' : event.price + '€'} ${event.reserve === "" ? '' : ' | ' + event.reserve}</p>
+                        <p id="price">${event.price} ${event.reserve === "" ? '' : ' | ' + event.reserve}</p>
                         
                         ${isSmallScreen ? `
                             <button class="show-more-btn" data-index="${index}">
