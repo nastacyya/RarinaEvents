@@ -9,12 +9,30 @@
         "description": "Lieliska iespēja īrēt bērnu istabu ar -50% atlaidi! Cenā iekļauts viss – rotaļu istaba, milzīgs bumbu baseins, gaisa hokejs, attīstošais dēlis un vēl daudz kas cits. Ideāli piemērota dzimšanas dienām, izlaidumiem un citiem svētkiem!"
     },
     {
-        "image": "lv_lesson.jpeg",
-        "title": "Spēlējam un Mācāmies! Latviešu Valodas Nodarbība Bērniem",
-        "dateTime": "01.07.25 | 18:00",
-        "age": "6-8 gadi",
-        "price": 10,
+        "image": "bear.jpeg",
+        "title": "Radošā darbnīca bērniem \"Krāsojam Tinky lāci!\"",
+        "dateTime": "09.08.25 un 10.08.25 | 11:00 - 13:00",
+        "age": "No 7 gadiem",
+        "price": "30€ (bērns), +3€ (pieaugušais)",
         "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Draudzīga un aktīva latviešu valodas nodarbība mazākumtautību pirmsskolas bērniem! Mācīsimies valodu caur radošām spēlēm, kustību aktivitātēm un dzīvu komunikāciju ar skolotāju un vienaudžiem. Viegla un aizraujoša pieeja latviešu valodai – spēlējoties, draudzējoties un atklājot valodas burvību!"
+        "description": "Katrs dalībnieks pats izkrāso savu balto Tinky lāci. Noslēgumā - Tinky Show disko ar ziepu burbuļiem! Radošs prieks un jautrība garantēta!"
+    },
+    {
+        "image": "princess.jpeg",
+        "title": "Skaistuma Diena Mazajām Princesēm",
+        "dateTime": "17.08.25 | 11:00 - 13:00",
+        "age": "6-12 gadi",
+        "price": "35€",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Neaizmirstama diena mazajām dāmām ar rotaļīgu manikīru, spīguļiem, strazīšiem, košām frizūrām un krāsainām bizītēm! Pēc pārvērtībām notiks īsta modes skate, fotosesija, gardi kārumi, un jautra mūzika. Svētki, kuros katra meitene sajutīsies kā īsta princese!"
+    },
+    {
+        "image": "paw.jpeg",
+        "title": "Ballīte bērniem: Paw Patrol jeb Ķepu Patruļa",
+        "dateTime": "24.08.25 | 11:00 - 13:00",
+        "age": "4-7 gadi",
+        "price": "25€ (bērns), +3€ (pieaugušais)",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Bērnus izklaidēs Ķepu Patruļas varoņi - spēles, uzdevumi un atrakcijas! Pārsteigumā bērnus sagaida folijas diskotēka. Šis pasākums bērniem paliks atmiņā uz ilgu laiku, jautrība garantēta!"
     }
 ]
