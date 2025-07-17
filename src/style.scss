@@ -54,6 +54,7 @@ html, body {
     font-weight: 300;
     font-style: normal;
     letter-spacing: 1px;
+    color-scheme: only light;
 }
 
 // Header and sidebar stilization
@@ -312,7 +313,7 @@ header {
             }
             @include respond(md) {
                 font-size: 11px;  //-1px
-                width: 170px;   
+                width: 150px;   
                 padding: 12px;
             }
             @include respond(sm) {
@@ -1437,7 +1438,7 @@ iframe {
         th, td {
             font-size: 20px;
             border: 0.5px solid $dark-pink;
-            padding: 12px;
+            padding: 15px;
             color: #3e3e3e;
             @include respond(lg) {
                 font-size: 16px;
