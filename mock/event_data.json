@@ -9,6 +9,15 @@
         "description": "Lieliska iespēja īrēt bērnu istabu ar -50% atlaidi! Cenā iekļauts viss – rotaļu istaba, milzīgs bumbu baseins, gaisa hokejs, attīstošais dēlis un vēl daudz kas cits. Ideāli piemērota dzimšanas dienām, izlaidumiem un citiem svētkiem!"
     },
     {
+        "image": "lv_lesson1.jpeg",
+        "title": "Spēlējam un mācāmies! Latviešu valodas nodarbība bērniem",
+        "dateTime": "Katru otrdienu | 18:00 ",
+        "age": "6–8 gadi",
+        "price": "10€",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Draudzīga un aktīva latviešu valodas nodarbība mazākumtautību pirmsskolas bērniem! Mācīsimies valodu caur radošām spēlēm, kustību aktivitātēm un dzīvu komunikāciju ar skolotāju un vienaudžiem. Viegla un aizraujoša pieeja latviešu valodai – spēlējoties, draudzējoties un atklājot valodas burvību!"
+    },
+    {
         "image": "bear.jpeg",
         "title": "Radošā darbnīca bērniem \"Krāsojam Tinky lāci!\"",
         "dateTime": "09.08.25 un 10.08.25 | 11:00 - 13:00",
@@ -19,7 +28,7 @@
     },
     {
         "image": "princess.jpeg",
-        "title": "Skaistuma Diena Mazajām Princesēm",
+        "title": "Skaistuma diena mazajām princesēm",
         "dateTime": "17.08.25 | 11:00 - 13:00",
         "age": "6-12 gadi",
         "price": "35€",
