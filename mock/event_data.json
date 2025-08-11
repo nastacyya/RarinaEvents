@@ -18,13 +18,13 @@
         "description": "Draudzīga un aktīva latviešu valodas nodarbība mazākumtautību pirmsskolas bērniem! Mācīsimies valodu caur radošām spēlēm, kustību aktivitātēm un dzīvu komunikāciju ar skolotāju un vienaudžiem. Viegla un aizraujoša pieeja latviešu valodai – spēlējoties, draudzējoties un atklājot valodas burvību!"
     },
     {
-        "image": "bear.jpeg",
-        "title": "Radošā darbnīca bērniem \"Krāsojam Tinky lāci!\"",
-        "dateTime": "09.08.25 un 10.08.25 | 11:00 - 13:00",
-        "age": "No 7 gadiem",
-        "price": "30€ (bērns), +3€ (pieaugušais)",
+        "image": "drawing.jpeg",
+        "title": "Zīmējam un attīstāmies! Zīmēšanas nodarbības bērniem ar profesionālu mākslinieku",
+        "dateTime": "Katru trešdienu | 18:00",
+        "age": "5-8 gadi",
+        "price": "10€ | 15€ brālim un māsai kopā",
         "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Katrs dalībnieks pats izkrāso savu balto Tinky lāci. Noslēgumā - Tinky Show disko ar ziepu burbuļiem! Radošs prieks un jautrība garantēta!"
+        "description": "Radošas un iedvesmojošas zīmēšanas nodarbības bērniem ar profesionālu mākslinieku! Katra nodarbība – jauna tēma un jaunas zīmēšanas tehnikas. Zīmēsim dzīvniekus, pasaku varoņus, dabas ainavas un daudz ko citu! Bērni attīstīs iztēli, roku veiklību un māksliniecisko izpausmi draudzīgā un atbalstošā vidē!"
     },
     {
         "image": "princess.jpeg",
