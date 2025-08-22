@@ -27,15 +27,6 @@
         "description": "Radošas un iedvesmojošas zīmēšanas nodarbības bērniem ar profesionālu mākslinieku! Katra nodarbība – jauna tēma un jaunas zīmēšanas tehnikas. Zīmēsim dzīvniekus, pasaku varoņus, dabas ainavas un daudz ko citu! Bērni attīstīs iztēli, roku veiklību un māksliniecisko izpausmi draudzīgā un atbalstošā vidē!"
     },
     {
-        "image": "princess.jpeg",
-        "title": "Skaistuma diena mazajām princesēm",
-        "dateTime": "17.08.25 | 11:00 - 13:00",
-        "age": "6-12 gadi",
-        "price": "35€",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Neaizmirstama diena mazajām dāmām ar rotaļīgu manikīru, spīguļiem, strazīšiem, košām frizūrām un krāsainām bizītēm! Pēc pārvērtībām notiks īsta modes skate, fotosesija, gardi kārumi, un jautra mūzika. Svētki, kuros katra meitene sajutīsies kā īsta princese!"
-    },
-    {
         "image": "paw.jpeg",
         "title": "Ballīte bērniem: Paw Patrol jeb Ķepu Patruļa",
         "dateTime": "24.08.25 | 11:00 - 13:00",
@@ -43,5 +34,23 @@
         "price": "25€ (bērns), +3€ (pieaugušais)",
         "reserve": "Iepriekšējā pieteikšanās",
         "description": "Bērnus izklaidēs Ķepu Patruļas varoņi - spēles, uzdevumi un atrakcijas! Pārsteigumā bērnus sagaida folijas diskotēka. Šis pasākums bērniem paliks atmiņā uz ilgu laiku, jautrība garantēta!"
+    },
+     {
+        "image": "bear.jpeg",
+        "title": "Radošā darbnīca bērniem. Krāsojam Tinky Lāci",
+        "dateTime": "7. septembris | 11:00 – 13:00",
+        "age": "No 7 gadiem",
+        "price": "0€ | +3€ ja piedalās ar pieaugušo",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Radoša darbnīca bērniem kopā ar profesionālu mākslinieku! Krāsosim baltu Tinky lāci un izgatavosim skaistu suvenīru savām rokām! Visi materiāli tiek nodrošināti. Lieliska iespēja attīstīt radošumu un pavadīt laiku mākslinieciskā gaisotnē!"
+    },
+     {
+        "image": "bouquet.jpeg",
+        "title": "Meistarklase: Gardais sāļais pušķis Tēva dienai",
+        "dateTime": "13. septembris | 11:00 – 13:00",
+        "age": "Bērns + pieaugušais",
+        "price": "40€ (bērns + pieaugušais)",
+        "reserve": "Vietu skaits ierobežots – piesakies jau tagad!",
+        "description": "Radoša meistarklase bērniem un pieaugušajiem Tēva dienas noskaņās! Kopā veidosim gardu un oriģinālu sāļo pušķi no siera, desiņām, dārzeņiem un citiem našķiem. Mākslinieka vadībā apgūsim skaistas kompozīcijas izveidi un noformēsim pušķi kā dāvanu tētim. Visi materiāli nodrošināti, un darbnīcā valdīs sirsnīga un ģimeniska atmosfēra."
     }
 ]
