@@ -1,14 +1,5 @@
 [
     {
-        "image": "atlaide.jpeg",
-        "title": "Vasaras akcija bērnu pasākumu telpas īrei!",
-        "dateTime": "01.07.25 - 31.08.25",
-        "age": "",
-        "price": "Cena tiek noteikta individuāli – atkarībā no dienas (darba diena vai brīvdiena)",
-        "reserve": "",
-        "description": "Lieliska iespēja īrēt bērnu istabu ar -50% atlaidi! Cenā iekļauts viss – rotaļu istaba, milzīgs bumbu baseins, gaisa hokejs, attīstošais dēlis un vēl daudz kas cits. Ideāli piemērota dzimšanas dienām, izlaidumiem un citiem svētkiem!"
-    },
-    {
         "image": "lv_lesson1.jpeg",
         "title": "Spēlējam un mācāmies! Latviešu valodas nodarbība bērniem",
         "dateTime": "Katru otrdienu | 18:00 ",
@@ -27,15 +18,6 @@
         "description": "Radošas un iedvesmojošas zīmēšanas nodarbības bērniem ar profesionālu mākslinieku! Katra nodarbība – jauna tēma un jaunas zīmēšanas tehnikas. Zīmēsim dzīvniekus, pasaku varoņus, dabas ainavas un daudz ko citu! Bērni attīstīs iztēli, roku veiklību un māksliniecisko izpausmi draudzīgā un atbalstošā vidē!"
     },
     {
-        "image": "paw.jpeg",
-        "title": "Ballīte bērniem: Paw Patrol jeb Ķepu Patruļa",
-        "dateTime": "24.08.25 | 11:00 - 13:00",
-        "age": "4-7 gadi",
-        "price": "25€ (bērns), +3€ (pieaugušais)",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Bērnus izklaidēs Ķepu Patruļas varoņi - spēles, uzdevumi un atrakcijas! Pārsteigumā bērnus sagaida folijas diskotēka. Šis pasākums bērniem paliks atmiņā uz ilgu laiku, jautrība garantēta!"
-    },
-     {
         "image": "bear.jpg",
         "title": "Radošā darbnīca bērniem. Krāsojam Tinky Lāci",
         "dateTime": "7. septembris | 11:00 – 13:00",
@@ -44,7 +26,7 @@
         "reserve": "Iepriekšējā pieteikšanās",
         "description": "Radoša darbnīca bērniem kopā ar profesionālu mākslinieku! Krāsosim baltu Tinky lāci un izgatavosim skaistu suvenīru savām rokām! Visi materiāli tiek nodrošināti. Lieliska iespēja attīstīt radošumu un pavadīt laiku mākslinieciskā gaisotnē!"
     },
-     {
+    {
         "image": "bouquet.jpg",
         "title": "Meistarklase: Gardais sāļais pušķis Tēva dienai",
         "dateTime": "13. septembris | 11:00 – 13:00",
