@@ -1351,6 +1351,104 @@ iframe {
     @include respond(sm) {
         padding-top: 50px;
     }
+
+    .pricing-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0;
+        gap: 40px;
+        padding: 0 40px;
+
+        @include respond(lg) {
+            gap: 30px;
+        }
+
+
+        #smile {
+            border-color: $dark-pink;
+
+            .pricing-header {
+                color: $dark-pink;
+            }
+        }
+        #lux {
+            border-color: #83cdc7;
+
+            .pricing-header {
+                color: #83cdc7;
+            }
+        }
+        #premium {
+            border-color: rgb(247, 165, 50);
+
+            .pricing-header {
+                color: rgb(247, 165, 50);
+            }
+        }
+
+        .pricing-block {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            background: $light-pink;
+            border-radius: 23px;
+            padding: 60px 20px;
+            max-width: 270px;
+            text-align: left;
+            color: #3e3e3e;
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+            justify-content: start;
+            align-items: center;
+            border-width: 3px;
+            border-style: solid;
+
+            @include respond(lg) {
+                padding: 40px 10px;
+            }
+
+            .pricing-header {
+                font-size: 24px;
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-bottom: 1px solid rgb(199, 199, 199);
+                width: 210px;
+                padding-bottom: 20px;
+
+                @include respond(lg) {
+                    width: 170px;
+                    font-size: 22px;
+                }
+
+                h2:not(h2.set-price){
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    margin-bottom: 6px;
+
+                    @include respond(lg) {
+                        font-size: 18px;
+                    }
+                }
+                
+            }
+
+            .pricing-details {
+                list-style-type: circle;
+                font-size: 16px;
+                @include respond(lg) {
+                    padding-left: 30px;
+                    font-size: 14px;
+                }
+
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+    }
+
     h1 {
         color: $bg-primary;
         font-weight: 500;
