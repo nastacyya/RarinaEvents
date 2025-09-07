@@ -1352,6 +1352,29 @@ iframe {
         padding-top: 50px;
     }
 
+    #sets-title {
+        margin-top: 50px !important;
+        margin-bottom: 5px;
+    }
+
+    span {
+        font-size: 18px;
+        color: $bg-primary;
+        margin-bottom: 10px;
+        font-weight: 400;
+        width: 80%;
+        text-align: center;
+        @include respond(lg) {
+            font-size: 16px;
+        }
+        @include respond(md) {
+            font-size: 14px;
+        }
+        @include respond(sm) {
+            font-size: 12px;
+        }
+    }
+
     .pricing-container {
         display: flex;
         justify-content: space-between;
@@ -1363,6 +1386,13 @@ iframe {
             gap: 30px;
         }
 
+        @include respond(md) {
+            flex-direction: column;
+        }
+
+        @include respond(sm) {
+            padding: 0 20px;
+        }
 
         #smile {
             border-color: $dark-pink;
@@ -1406,8 +1436,17 @@ iframe {
                 padding: 40px 10px;
             }
 
+            @include respond(md) {
+                max-width: 360px;
+                padding: 40px 20px;
+            }
+
+            @include respond(sm) {
+                max-width: 280px;
+                padding: 35px 20px;
+            }
+
             .pricing-header {
-                font-size: 24px;
                 margin-bottom: 30px;
                 display: flex;
                 flex-direction: column;
@@ -1418,7 +1457,12 @@ iframe {
 
                 @include respond(lg) {
                     width: 170px;
-                    font-size: 22px;
+                }
+                @include respond(md) {
+                    width: 280px;
+                }
+                @include respond(sm) {
+                    width: 200px;
                 }
 
                 h2:not(h2.set-price){
@@ -1428,6 +1472,14 @@ iframe {
 
                     @include respond(lg) {
                         font-size: 18px;
+                    }
+                }
+
+                .set-price {
+                    font-size: 33px;
+
+                    @include respond(sm) {
+                        font-size: 28px;
                     }
                 }
                 
@@ -1441,6 +1493,15 @@ iframe {
                     font-size: 14px;
                 }
 
+                @include respond(md) {
+                    padding-left: 40px;
+                }
+
+                @include respond(sm) {
+                    padding-left: 30px;
+                }
+                
+
                 li {
                     margin-bottom: 10px;
                 }
@@ -1449,11 +1510,82 @@ iframe {
         }
     }
 
+    .additions-div {
+        @include flex-row();
+        margin-top: 30px;
+        justify-content: center;
+        gap: 20px;
+
+        @include respond(lg) {
+            padding: 0 40px;
+        }
+
+        @include respond(md) {
+            flex-direction: column;
+        }
+
+        @include respond(sm) {
+            margin-top: 10px;
+            gap: 10px;
+            padding: 0 20px;
+        }
+
+        p {
+            font-size: 26px;
+            color: $bg-primary;
+            font-weight: 500;
+            width: 40%;
+            text-align: end;
+            @include respond(lg) {
+                width: 43%;
+            }
+
+            @include respond(md) {
+                font-size: 22px;
+                width: 100%;
+                text-align: start;
+            }
+
+            @include respond(sm) {
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        
+
+        ul {
+
+            @include respond(lg) {
+                padding-left: 30px;
+            }
+
+            @include respond(sm) {
+                padding-left: 20px;
+            }
+
+            li {
+                font-size: 18px;
+                color: $bg-primary;
+                
+                @include respond(md) {
+                    padding-left: 10px;
+                }
+                @include respond(sm) {
+                    font-size: 14px;
+                    padding-left: 5px;
+                    line-height: 2em;
+                }
+            }
+        }
+    }
+
+
+
     h1 {
         color: $bg-primary;
         font-weight: 500;
         font-size: 36px;
-        margin-top: 50px;
+        margin-top: 90px;
         text-align: center;
         padding: 0 10px;
         
@@ -1468,7 +1600,7 @@ iframe {
             font-size: 20px;
         }
     }
-    p {
+    #addition {
         font-size: 24px;
         color: $bg-primary;
         margin-bottom: 100px;
