@@ -1423,7 +1423,7 @@ iframe {
             background: $light-pink;
             border-radius: 23px;
             padding: 60px 20px;
-            max-width: 270px;
+            max-width: 280px;
             text-align: left;
             color: #3e3e3e;
             box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
@@ -1437,7 +1437,7 @@ iframe {
             }
 
             @include respond(md) {
-                max-width: 360px;
+                max-width: 350px;
                 padding: 40px 20px;
             }
 
@@ -1517,7 +1517,7 @@ iframe {
         gap: 20px;
 
         @include respond(lg) {
-            padding: 0 40px;
+            padding: 0 70px;
         }
 
         @include respond(md) {
@@ -1527,22 +1527,17 @@ iframe {
         @include respond(sm) {
             margin-top: 10px;
             gap: 10px;
-            padding: 0 20px;
+            padding: 0 30px;
         }
 
         p {
             font-size: 26px;
             color: $bg-primary;
             font-weight: 500;
-            width: 40%;
             text-align: end;
-            @include respond(lg) {
-                width: 43%;
-            }
 
             @include respond(md) {
                 font-size: 22px;
-                width: 100%;
                 text-align: start;
             }
 

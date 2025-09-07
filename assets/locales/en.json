@@ -55,5 +55,22 @@
     "next_hour_40": "* Each additional hour: 40 EUR",
     "next_hour_50": "* Each additional hour: 50 EUR",
     "additional": "* Additional time is available only if there are no other bookings",
-    "included": "The 3-hour rental price includes use of the coffee machine and kettle, drinking water, ball pit, busy boards, air hockey, and other room games."
+    "included": "The 3-hour rental price includes use of the coffee machine and kettle, drinking water, ball pit, busy boards, air hockey, and other room games.",
+
+    "sets_title": "Birthday Sets",
+    "sets_subtitle": "(Prices valid until 30.09.2025, when booking celebrations until 31.12.2025)",
+    "smile_title": "Smile",
+    "lux_title": "Lux",
+    "premium_title": "Premium",
+    "rental_3h": "3-hour room rental",
+    "balloon_bouquet": "Balloon bouquet for the birthday child (7 pcs)",
+    "birthday_gift": "Gift for the birthday child",
+    "animation_program": "Animation program 1h (for ages 4–7) – 1 animator",
+    "party_mix": "Animation program 1h Party mix (activities, dance games, bubble show, challenges) – 1 animator",
+    "extras_title": "Additionally available:",
+    "pinata": "Piñata with filling – from €35",
+    "bubble_show": "Bubble show – from €65",
+    "silver_disco": "Silver disco program – from €140",
+    "facepaint_popcorn_cottoncandy": "Face painting, popcorn and cotton candy making"
+
 }

@@ -55,5 +55,21 @@
     "next_hour_40": "* Nākamā stunda 40 EUR",
     "next_hour_50": "* Nākamā stunda 50 EUR",
     "additional": "* Papildus laiks iespējams tikai, ja nav citu pasākumu",
-    "included": "3h īres maksā iekļaujas kafijas aparāta un tējkannas izmantošana, dzeramais ūdens, bumbu baseins, bizibords, gaisa hokejs un citas istabas spēles."
+    "included": "3h īres maksā iekļaujas kafijas aparāta un tējkannas izmantošana, dzeramais ūdens, bumbu baseins, bizibords, gaisa hokejs un citas istabas spēles.",
+
+    "sets_title": "Dzimšanas dienas komplekti",
+    "sets_subtitle": "(Cenas spēkā līdz 30.09.2025, rezervējot svinības līdz 31.12.2025)",
+    "smile_title": "Smile",
+    "lux_title": "Lux",
+    "premium_title": "Premium",
+    "rental_3h": "Telpas īre 3h",
+    "balloon_bouquet": "Balonu pušķis jubilāram (7gb)",
+    "birthday_gift": "Dāvana jubilāram",
+    "animation_program": "Animācijas programma 1h (paredzēts 4–7 gadu vecumam) – 1 animators",
+    "party_mix": "Animācijas programma 1h Party mix (aktivitātes, dejas, spēles, ziepju burbuļu šovs, izaicinājumi) – 1 animators",
+    "extras_title": "Papildus iespējams pievienot:",
+    "pinata": "Pinjata ar pildījumu – no 35 €",
+    "bubble_show": "Ziepju burbuļu šovs – no 65 €",
+    "silver_disco": "Sudraba disko programma – no 140 €",
+    "facepaint_popcorn_cottoncandy": "Akvagrims, popkorna un cukurvates pagatavošana"
 }
