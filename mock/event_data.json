@@ -16,23 +16,5 @@
         "price": "10€ | 15€ brālim un māsai kopā",
         "reserve": "Iepriekšējā pieteikšanās",
         "description": "Radošas un iedvesmojošas zīmēšanas nodarbības bērniem ar profesionālu mākslinieku! Katra nodarbība – jauna tēma un jaunas zīmēšanas tehnikas. Zīmēsim dzīvniekus, pasaku varoņus, dabas ainavas un daudz ko citu! Bērni attīstīs iztēli, roku veiklību un māksliniecisko izpausmi draudzīgā un atbalstošā vidē!"
-    },
-    {
-        "image": "bear.jpg",
-        "title": "Radošā darbnīca bērniem. Krāsojam Tinky Lāci",
-        "dateTime": "7. septembris | 11:00 – 13:00",
-        "age": "No 7 gadiem",
-        "price": "0€ | +3€ ja piedalās ar pieaugušo",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Radoša darbnīca bērniem kopā ar profesionālu mākslinieku! Krāsosim baltu Tinky lāci un izgatavosim skaistu suvenīru savām rokām! Visi materiāli tiek nodrošināti. Lieliska iespēja attīstīt radošumu un pavadīt laiku mākslinieciskā gaisotnē!"
-    },
-    {
-        "image": "bouquet.jpg",
-        "title": "Meistarklase: Gardais sāļais pušķis Tēva dienai",
-        "dateTime": "13. septembris | 11:00 – 13:00",
-        "age": "Bērns + pieaugušais",
-        "price": "40€ (bērns + pieaugušais)",
-        "reserve": "Vietu skaits ierobežots – piesakies jau tagad!",
-        "description": "Radoša meistarklase bērniem un pieaugušajiem Tēva dienas noskaņās! Kopā veidosim gardu un oriģinālu sāļo pušķi no siera, desiņām, dārzeņiem un citiem našķiem. Mākslinieka vadībā apgūsim skaistas kompozīcijas izveidi un noformēsim pušķi kā dāvanu tētim. Visi materiāli nodrošināti, un darbnīcā valdīs sirsnīga un ģimeniska atmosfēra."
     }
 ]
