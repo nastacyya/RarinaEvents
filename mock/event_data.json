@@ -2,9 +2,9 @@
     {
         "image": "lv_lesson1.jpeg",
         "title": "Spēlējam un mācāmies! Latviešu valodas nodarbība bērniem",
-        "dateTime": "Katru otrdienu | 18:00 ",
+        "dateTime": "Katru ceturtdienu | 18:00 ",
         "age": "6–8 gadi",
-        "price": "10€",
+        "price": "15€",
         "reserve": "Iepriekšējā pieteikšanās",
         "description": "Draudzīga un aktīva latviešu valodas nodarbība mazākumtautību pirmsskolas bērniem! Mācīsimies valodu caur radošām spēlēm, kustību aktivitātēm un dzīvu komunikāciju ar skolotāju un vienaudžiem. Viegla un aizraujoša pieeja latviešu valodai – spēlējoties, draudzējoties un atklājot valodas burvību!"
     },
@@ -16,5 +16,24 @@
         "price": "10€ | 15€ brālim un māsai kopā",
         "reserve": "Iepriekšējā pieteikšanās",
         "description": "Radošas un iedvesmojošas zīmēšanas nodarbības bērniem ar profesionālu mākslinieku! Katra nodarbība – jauna tēma un jaunas zīmēšanas tehnikas. Zīmēsim dzīvniekus, pasaku varoņus, dabas ainavas un daudz ko citu! Bērni attīstīs iztēli, roku veiklību un māksliniecisko izpausmi draudzīgā un atbalstošā vidē!"
+    },
+    {
+        "image": "lavanda.jpg",
+        "title": "Radošā darbnīca bērniem. Taisām Lavandas pušķi",
+        "dateTime": "27. septembris | 11:00 - 13:00",
+        "age": "7–12 gadiem",
+        "price": "25€ | +3€ ja piedalās ar pieaugušo",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Radoša un smaržīga darbnīca bērniem, kurā veidosim savu īpašo lavandas pušķi. Uzzināsim vairāk par šo aromātisko augu, tā īpašībām un pielietojumu. Katrs bērns izgatavos skaistu, ar rokām darinātu pušķīti, ko ņemt līdzi mājās. Nodarbība attīsta gaumes izjūtu, pacietību un darbošanās prieku."
+    },
+    {
+        "image": "ziepes.jpeg",
+        "title": "Vienradze un zaķītis aicina ziepju burbuļu maģiskajā pasaulē",
+        "dateTime": "5. oktobris | 11:00 - 13:00",
+        "age": "3–6 gadi",
+        "price": "25€ | +3€ ja piedalās ar pieaugušo",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Burvīga programma pašiem mazākajiem – bērniem no 3 līdz 6 gadiem! Vienradze un zaķītis iepazīstinās bērnus ar ziepju burbuļu maģisko pasauli. Būs spēles ar lieliem un maziem burbuļiem, dejas, jautri uzdevumi un pat iespēja pašam atrasties milzu burbulī! Katrs bērns saņems balona figūriņu, ko paņemt līdzi mājās. Radoši, aizraujoši un neaizmirstami!"
     }
+    
 ]
