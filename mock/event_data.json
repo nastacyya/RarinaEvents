@@ -1,14 +1,5 @@
 [
     {
-        "image": "ziepes.jpeg",
-        "title": "Vienradze un zaķītis aicina ziepju burbuļu maģiskajā pasaulē",
-        "dateTime": "5. oktobris | 11:00 - 13:00",
-        "age": "3–6 gadi",
-        "price": "25€ | +3€ ja piedalās ar pieaugušo",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Burvīga programma pašiem mazākajiem – bērniem no 3 līdz 6 gadiem! Vienradze un zaķītis iepazīstinās bērnus ar ziepju burbuļu maģisko pasauli. Būs spēles ar lieliem un maziem burbuļiem, dejas, jautri uzdevumi un pat iespēja pašam atrasties milzu burbulī! Katrs bērns saņems balona figūriņu, ko paņemt līdzi mājās. Radoši, aizraujoši un neaizmirstami!"
-    },
-    {
         "image": "puskis.jpeg",
         "title": "Bērnu radošā darbnīca \"Saldais pušķis\"",
         "dateTime": "20. oktobris | 17:00 – 18:30",
@@ -27,13 +18,22 @@
         "description": "Aizraujoša radošā meistarklase \"Tinky Lācis\"! Bērni krāsos ar krāsām, radīs savu unikālo dizainu un veidos balto lāci pēc savas fantāzijas. Rezultātā taps skaists dizaina suvenīrs — baltais mīlulis, kas priecēs arī mājās. Radoši, iedvesmojoši un unikāli!"
     },
     {
-        "image": "halloween.jpeg",
+        "image": "halloween_img.jpeg",
         "title": "Halloween ballīte bērniem",
         "dateTime": "31. oktobris | 18:30 – 20:30",
         "age": "5–9 gadi",
         "price": "30€ | +3€ ja piedalās ar pieaugušo",
         "reserve": "Iepriekšējā pieteikšanās",
         "description": "Šausmīgi jautra programma Halloween noskaņās! Spēles, konkursi, radošās darbnīcas un pārsteigumi — katrs bērns saņems īpašu dāvaniņu. Aicinām ģērbties maskās un nākt svinēt kopā neaizmirstamus svētkus!"
+    },
+    {
+        "image": "princese.jpg",
+        "title": "Skaistuma diena mazajām princesēm",
+        "dateTime": "30. novembris | 11:00 – 13:00",
+        "age": "Meitenēm vecumā no 6 līdz 12 gadiem",
+        "price": "35€",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Skaistuma piedzīvojums, kurā katra meitene sajutīsies kā īsta princese! Pasākuma laikā gaidāma krāšņa programma ar dažādām aktivitātēm: mirdzošs grims ar sejas dārgakmeņiem, manikīrs ar nagu apstrādi, lakošanu un eļļiņu, frizūras ar krāsainām bizītēm, defilē ar mūziku un gājienu pa sarkano paklāju, kā arī profesionāla fotosesija skaistām atmiņām. Katru dalībnieci sagaidīs arī gardi virtuļi un atsvaidzinoša limonāde!"
     },
     {
         "image": "lv_lesson1.jpeg",
