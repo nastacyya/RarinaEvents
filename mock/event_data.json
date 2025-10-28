@@ -1,23 +1,5 @@
 [
     {
-        "image": "puskis.jpeg",
-        "title": "Bērnu radošā darbnīca \"Saldais pušķis\"",
-        "dateTime": "20. oktobris | 17:00 – 18:30",
-        "age": "Bērniem no 7 gadiem",
-        "price": "30€",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Aicinam bērnus uz radošo meistarklasi, kur kopā gatavosim skaistu un gardu saldumu pušķi. Krāsaini našķi, fantāzija un daudz prieka — katrs dalībnieks izveidos savu unikālo dāvanu, ko paņemt līdzi mājās. Praktiski, radoši un garšīgi!"
-    },
-    {
-        "image": "baltaj-medvedis.jpeg",
-        "title": "Meistarklase \"Krāsojam Balto Tinky Lāci\"",
-        "dateTime": "24. oktobris | 12:00 – 14:00",
-        "age": "Bērniem no 7 gadiem",
-        "price": "30€",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Aizraujoša radošā meistarklase \"Tinky Lācis\"! Bērni krāsos ar krāsām, radīs savu unikālo dizainu un veidos balto lāci pēc savas fantāzijas. Rezultātā taps skaists dizaina suvenīrs — baltais mīlulis, kas priecēs arī mājās. Radoši, iedvesmojoši un unikāli!"
-    },
-    {
         "image": "halloween_img.jpeg",
         "title": "Halloween ballīte bērniem",
         "dateTime": "31. oktobris | 18:30 – 20:30",
