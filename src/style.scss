@@ -902,6 +902,10 @@ header {
             line-height: 1.7;
             font-size: 22px;
 
+            a {
+                color: $bg-primary;
+            }
+
             @include respond(xl) {
                 font-size: 18px;    //-4px
             } 

@@ -1,21 +1,39 @@
 [
     {
-        "image": "halloween_img.jpeg",
-        "title": "Halloween ballīte bērniem",
-        "dateTime": "31. oktobris | 18:30 – 20:30",
-        "age": "5–9 gadi",
-        "price": "30€ | +3€ ja piedalās ar pieaugušo",
+        "image": "vainags.jpeg",
+        "title": "Radoša meistarklase \"Izveido savu Adventes vainagu!\"",
+        "dateTime": "22. novembris | 11:00–13:00",
+        "age": "Piemērots gan pieaugušajiem, gan bērniem",
+        "price": "40€",
         "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Šausmīgi jautra programma Halloween noskaņās! Spēles, konkursi, radošās darbnīcas un pārsteigumi — katrs bērns saņems īpašu dāvaniņu. Aicinām ģērbties maskās un nākt svinēt kopā neaizmirstamus svētkus!"
+        "description": "Ienirstiet svētku radīšanas burvībā Rarina Event ģimenes studijā! Šajā siltajā un iedvesmojošajā meistarklasē kopā veidosim Adventes vainagu — svētku gaidīšanas un mājas siltuma simbolu.  Baudiet aromātisku tēju un ļaujieties radošumam, radot unikālu vainagu, kas priecēs jūsu mājās. Visi materiāli tiks nodrošināti — nāciet un radiet! 💫"
     },
     {
         "image": "princese.jpg",
         "title": "Skaistuma diena mazajām princesēm",
-        "dateTime": "30. novembris | 11:00 – 13:00",
+        "dateTime": "30. novembris | 11:00–13:00",
         "age": "Meitenēm vecumā no 6 līdz 12 gadiem",
         "price": "35€",
         "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Skaistuma piedzīvojums, kurā katra meitene sajutīsies kā īsta princese! Pasākuma laikā gaidāma krāšņa programma ar dažādām aktivitātēm: mirdzošs grims ar sejas dārgakmeņiem, manikīrs ar nagu apstrādi, lakošanu un eļļiņu, frizūras ar krāsainām bizītēm, defilē ar mūziku un gājienu pa sarkano paklāju, kā arī profesionāla fotosesija skaistām atmiņām. Katru dalībnieci sagaidīs arī gardi virtuļi un atsvaidzinoša limonāde!"
+        "description": "Skaistuma piedzīvojums, kurā katra meitene sajūtīsies kā īsta princese! Pasākuma laikā gaidāma krāšņa programma ar dažādām aktivitātēm: mirdzošs grims ar sejas dārgakmeņiem, manikīrs ar nagu apstrādi, lakošanu un eļļiņu, frizūras ar krāsainām bizītēm, defilē ar mūziku un gājienu pa sarkano paklāju, kā arī profesionāla fotosesija skaistām atmiņām. Katru dalībnieci sagaidīs arī gardi virtuļi un atsvaidzinoša limonāde!"
+    },
+    {
+        "image": "christmas.jpeg",
+        "title": "Bērnu Ziemassvētku eglītes",
+        "dateTime": "20. un 21. decembris | 10:30 (2–3 g.), 13:00 (4–6 g.), 16:00 (7–9 g.)",
+        "age": "Bērniem no 2 līdz 9 gadiem (atsevišķas programmas vecuma grupām)",
+        "price": "30–35€ | +3€ ja piedalās ar pieaugušo",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Ziemassvētku pasākums ar radošām darbnīcām, spēlēm, diskotēku un pārsteigumiem kopā ar animatoriem. Katram bērnam – dāvana, prieks un svētku noskaņa!"
+    },
+    {
+        "image": "dance.jpeg",
+        "title": "Mūsdienu dejas",
+        "dateTime": "Pirmdienās un ceturtdienās | 17:00–18:00 (6–10 g.) | 18:00–18:45 (3–5 g.)",
+        "age": "Bērniem no 3 līdz 10 gadiem",
+        "price": "Pirmā nodarbība tikai 3€",
+        "reserve": "Pieraksts un info: <a href=\"https://justdance.lv\" target=\"_blank\" rel=\"noopener\">justdance.lv</a> | <a href=\"tel:+37122178250\">22178250</a>",
+        "description": "Deju studija Just Dance Studio aicina bērnus uz mūsdienu deju nodarbībām Rīgā! Nodarbības notiek pirmdienās un ceturtdienās Latgales ielā 264, ģimenes studijā Rarina Event. Bērni apgūs mūsdienu deju pamatus, kustību koordināciju un ritma izjūtu jautrā un draudzīgā atmosfērā."
     },
     {
         "image": "lv_lesson1.jpeg",
