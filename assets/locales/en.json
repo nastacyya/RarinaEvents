@@ -52,8 +52,8 @@
     "price_eur": "Price, EUR",
     "mon-thr": "Monday - Thursday",
     "fri-sun": "Friday - Sunday",
+    "next_hour_30": "* Each additional hour: 30 EUR",
     "next_hour_40": "* Each additional hour: 40 EUR",
-    "next_hour_50": "* Each additional hour: 50 EUR",
     "additional": "* Additional time is available only if there are no other bookings",
     "included": "The 3-hour rental price includes use of the coffee machine and kettle, drinking water, ball pit, busy boards, air hockey, and other room games.",
 
