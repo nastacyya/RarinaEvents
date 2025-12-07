@@ -1,31 +1,5 @@
 [
-    {
-    "image": "miminitra.jpg",
-    "title": "Māmiņu rīti Rarina Event studijā",
-    "dateTime": "20. novembris | 10:00–12:00 (katru ceturtdienu)",
-    "age": "Piemērots māmiņām ar mazulīšiem",
-    "price": "15€",
-    "reserve": "Iepriekšējā pieteikšanās",
-    "description": "Sirsnīgi rīti mammām un mazulīšiem ar sarunām, atbalstu un nelielām dāvaniņām. Atklāšanā piedalīsies zīdīšanas speciāliste Arina. Mājīga atmosfēra, našķi un iespēja parunāties, kamēr mazulīši rotaļājas."
-    },
-    {
-        "image": "vainags.jpeg",
-        "title": "Radoša meistarklase \"Izveido savu Adventes vainagu!\"",
-        "dateTime": "22. novembris | 11:00–13:00",
-        "age": "Piemērots gan pieaugušajiem, gan bērniem",
-        "price": "40€",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Ienirstiet svētku radīšanas burvībā Rarina Event ģimenes studijā! Šajā siltajā un iedvesmojošajā meistarklasē kopā veidosim Adventes vainagu — svētku gaidīšanas un mājas siltuma simbolu.  Baudiet aromātisku tēju un ļaujieties radošumam, radot unikālu vainagu, kas priecēs jūsu mājās. Visi materiāli tiks nodrošināti — nāciet un radiet! 💫"
-    },
-    {
-        "image": "princese.jpg",
-        "title": "Skaistuma diena mazajām princesēm",
-        "dateTime": "30. novembris | 11:00–13:00",
-        "age": "Meitenēm vecumā no 6 līdz 12 gadiem",
-        "price": "35€",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Skaistuma piedzīvojums, kurā katra meitene sajūtīsies kā īsta princese! Pasākuma laikā gaidāma krāšņa programma ar dažādām aktivitātēm: mirdzošs grims ar sejas dārgakmeņiem, manikīrs ar nagu apstrādi, lakošanu un eļļiņu, frizūras ar krāsainām bizītēm, defilē ar mūziku un gājienu pa sarkano paklāju, kā arī profesionāla fotosesija skaistām atmiņām. Katru dalībnieci sagaidīs arī gardi virtuļi un atsvaidzinoša limonāde!"
-    },
+
     {
         "image": "christmas.jpeg",
         "title": "Bērnu Ziemassvētku eglītes",
@@ -36,13 +10,13 @@
         "description": "Ziemassvētku pasākums ar radošām darbnīcām, spēlēm, diskotēku un pārsteigumiem kopā ar animatoriem. Katram bērnam – dāvana, prieks un svētku noskaņa!"
     },
     {
-    "image": "cheers.jpeg",
-    "title": "Pirmsjaungada vakars vecākiem",
-    "dateTime": "27. decembris | 17:00–19:00",
-    "age": "Tikai pieaugušajiem",
-    "price": "40€",
-    "reserve": "Iepriekšējā pieteikšanās",
-    "description": "Aicinām jūs uz siltu un priecīgu pirmsjaungada vakaru vecākiem! Jūs sagaida interaktīva programma, gardi našķi un burbuļojošs šampanietis. Ienirstiet svētku noskaņā un izbaudiet patīkamu atpūtu brīnišķīgā atmosfērā. 🥳"
+        "image": "meistarklase.jpeg",
+        "title": "Svētku meistarklase \"Ziemassvētku piparkūkas ar savām rokām\"",
+        "dateTime": "24. decembris | 14:00–16:00",
+        "age": "Pieaugušais + bērns",
+        "price": "20€ (iekļauti visi materiāli)",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Izbaudiet Ziemassvētku burvību, kopā dekorējot piparkūkas ar glazūru un krāsainām skaidiņām. Sagaida svētku cienasts un silti dzērieni. Radiet mīļu svētku mirkli kopā! 🎄🍪"
     },
     {
         "image": "dance.jpeg",
