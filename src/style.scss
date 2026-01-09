@@ -957,6 +957,10 @@ header {
                 padding-top: 30px;
                 font-size: 18px;
 
+                b {
+                    font-weight: 600;
+                }
+
                 @include respond(xl) {
                     font-size: 16px;    //-2px
                 }

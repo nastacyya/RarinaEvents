@@ -1,5 +1,32 @@
 [
     {
+        "image": "labubu.webp",
+        "title": "Svētki ar Labubu — jautri un radoši",
+        "dateTime": "7. februāris | 11:00–13:00",
+        "age": "Bērni no 5 gadiem",
+        "price": "25€",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Spēles, radošās darbnīcas, izaicinājumi un pārsteigumi kopā ar Labubu! Būs arī uzkodas un jautra atmosfēra. 🎉🍭🐰"
+    },
+    {
+        "image": "minecraft.webp",
+        "title": "MINECRAFT Party",
+        "dateTime": "21. februāris | 11:00–13:00",
+        "age": "Bērni no 5 gadiem",
+        "price": "30€",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Spēles un aizraujoši izaicinājumi visiem bērniem, radošā MINECRAFT meistarklase mazajiem būvniekiem, garšīgi uzkodas, kā arī katram bērnam <b>DĀVANA</b>! "
+    },
+    {
+        "image": "rarina-matematika.webp",
+        "title": "Matemātika ar prieku",
+        "dateTime": "Katru trešdienu | 18:30",
+        "age": "1.–3. klase",
+        "price": "15€ / 50€ abonements (4 nodarbības)",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Jautras un attīstošas matemātikas nodarbības mazās grupās ar pieredzējušu skolotāju. Mājasdarbu skaidrošana, jaunas tēmas bez stresa, rotaļīgā un motivējošā vidē. Nodarbības LV / RU."
+    },
+    {
         "image": "dance.jpeg",
         "title": "Mūsdienu dejas",
         "dateTime": "Pirmdienās un ceturtdienās | 17:00–18:00 (6–10 g.) | 18:00–18:45 (3–5 g.)",
@@ -7,23 +34,5 @@
         "price": "Pirmā nodarbība tikai 3€",
         "reserve": "Pieraksts un info: <a href=\"https://justdance.lv\" target=\"_blank\" rel=\"noopener\">justdance.lv</a> | <a href=\"tel:+37122178250\">22178250</a>",
         "description": "Deju studija Just Dance Studio aicina bērnus uz mūsdienu deju nodarbībām Rīgā! Nodarbības notiek pirmdienās un ceturtdienās Latgales ielā 264, ģimenes studijā Rarina Event. Bērni apgūs mūsdienu deju pamatus, kustību koordināciju un ritma izjūtu jautrā un draudzīgā atmosfērā."
-    },
-    {
-        "image": "lv_lesson1.jpeg",
-        "title": "Spēlējam un mācāmies! Latviešu valodas nodarbība bērniem",
-        "dateTime": "Katru trešdienu | 18:30 ",
-        "age": "6–8 gadi",
-        "price": "15€",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Draudzīga un aktīva latviešu valodas nodarbība mazākumtautību pirmsskolas bērniem! Mācīsimies valodu caur radošām spēlēm, kustību aktivitātēm un dzīvu komunikāciju ar skolotāju un vienaudžiem. Viegla un aizraujoša pieeja latviešu valodai – spēlējoties, draudzējoties un atklājot valodas burvību!"
-    },
-    {
-        "image": "drawing.jpeg",
-        "title": "Zīmējam un attīstāmies! Zīmēšanas nodarbības bērniem ar profesionālu mākslinieku",
-        "dateTime": "Katru trešdienu | 17:30",
-        "age": "5-8 gadi",
-        "price": "10€ | 15€ brālim un māsai kopā",
-        "reserve": "Iepriekšējā pieteikšanās",
-        "description": "Radošas un iedvesmojošas zīmēšanas nodarbības bērniem ar profesionālu mākslinieku! Katra nodarbība – jauna tēma un jaunas zīmēšanas tehnikas. Zīmēsim dzīvniekus, pasaku varoņus, dabas ainavas un daudz ko citu! Bērni attīstīs iztēli, roku veiklību un māksliniecisko izpausmi draudzīgā un atbalstošā vidē!"
     }
 ]
