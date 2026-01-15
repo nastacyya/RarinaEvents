@@ -1365,7 +1365,7 @@ iframe {
         margin-bottom: 5px;
     }
 
-    span {
+    span.days {
         font-size: 18px;
         color: $bg-primary;
         margin-bottom: 10px;
@@ -1381,6 +1381,11 @@ iframe {
         @include respond(sm) {
             font-size: 12px;
         }
+
+    }
+
+    #prom {
+        font-weight: 500;
     }
 
     .pricing-container {
@@ -1702,13 +1707,10 @@ iframe {
             }
             
         }
-        td[colspan] {
+        td[colspan]:not(:last-of-type) {
             font-style: italic;
         }
 
-        .days {
-            font-weight: 500;
-        }
         .nowrap {
             white-space: nowrap;
             @include respond(xs) {
