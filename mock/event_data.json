@@ -8,6 +8,33 @@
         "reserve": "Iepriekšējā pieteikšanās",
         "description": "Spēles un aizraujoši izaicinājumi visiem bērniem, radošā MINECRAFT meistarklase mazajiem būvniekiem, garšīgi uzkodas, kā arī katram bērnam <b>DĀVANA</b>! "
     },
+      {
+        "image": "meteni.jpeg",
+        "title": "Koši Meteņi visai ģimenei",
+        "dateTime": "22. februāris | 11:00–13:00",
+        "age": "Visai ģimenei",
+        "price": "Bērniem — 25€, pieaugušajiem — 5€",
+        "reserve": "Iepriekšēja pieteikšanās",
+        "description": "Sirsnīgi Meteņu svētki ar smaržīgām pankūkām, ievārījumu un barankām, īstu samovāru, aktīvām ģimenes spēlēm, Friends Events animatoriem un īpašajiem viesiem — Mašu un Lāci. Silta, jautra un neaizmirstama atmosfēra visai ģimenei!"
+    },
+    {
+        "image": "march.jpeg",
+        "title": "8. marta svētku vakars sievietēm",
+        "dateTime": "8. marts | 16:00",
+        "age": "Sievietēm",
+        "price": "18€",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Silts, košs un svinīgs vakars, radīts īpaši sievietēm. Programmā muzikālais loto ar populāriem hitiem, jautra viktorīna, dejas, dziesmas un lielisks noskaņojums. Jūs sagaida cienasts, šampanietis, balvas, patīkami pārsteigumi un neaizmirstama svētku atmosfēra — ideāls veids, kā nosvinēt 8. martu!"
+    },
+    {
+        "image": "bunker.jpeg",
+        "title": "Spēle «Bunkurs»",
+        "dateTime": "20. marts | 18:30",
+        "age": "18+",
+        "price": "15€",
+        "reserve": "Iepriekšējā pieteikšanās",
+        "description": "Aizraujoša un spriedzes pilna spēle, kurā izdzīvos tas, kurš spēs pārliecināt! Pārbaudi savu loģiku, intuīciju un argumentēšanas prasmes, piedaloties misijās, stratēģiskās diskusijās un psiholoģiskos izaicinājumos. Vakara gaitā – mājīga atmosfēra, tēja, kafija"
+    },
     {
         "image": "rarina-matematika.webp",
         "title": "Matemātika ar prieku",
